@@ -1,0 +1,43 @@
+// JMC
+class JM_Instructor_F : Cav_B_Charlie_base_F { //General AR : 28kg
+        uniform[] = {"LOP_U_ISTS_Fatigue_19"};
+        vest[] = {"rhsusf_spcs_ocp_squadleader"};
+        backpack[] = {"B_TacticalPack_mcamo"};
+        primary[] = {"rhs_weap_m4a1_mstock","rhsusf_acc_SFMB556","rhsusf_acc_anpeq15_bk","rhsusf_acc_ACOG_RMR_3d",""};
+        secondary[] = {"","","","",""};
+        launcher[] = {"","","","",""};
+        magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",7,"SmokeShell",4,"rhs_mag_m67",4,"ACE_Chemlight_HiBlue",4,"ACE_Chemlight_HiYellow",4,"B_IR_Grenade",2,"SmokeShellYellow",4,"SmokeShellBlue",4};
+        items[] = {"ACE_quikclot",16,"ACE_tourniquet",4,"ACE_Flashlight_XL50","ACE_MapTools","ACE_microDAGR","ACRE_PRC152","ACRE_PRC152","rhsusf_ANPVS_14","rhsusf_ach_helmet_camo_ocp","rhsusf_oakley_goggles_clr","ACE_EntrenchingTool","ACE_HuntIR_monitor","ACE_SpraypaintBlack","rhs_weap_rsp30_green",3};
+        binoculars[] = {"ACE_Vector"};
+        compass[] = {"ItemCompass"};
+        goggles[] = {""};
+        gps[] = {""};
+        headgear[] = {"DAR_JMCap_Blk"};
+        map[] = {"ItemMap"};
+        nvgs[] = {""};
+        watch[] = {"ACE_Altimeter"};
+        insignia[] = {"Cav_Insignia_Specialized_Airborne"};
+    preLoadout = "[(_this select 0), 'charlie', 0, 0] call cScripts_fnc_setPreInitPlayerSettings;";
+    postLoadout = "[(_this select 0),true,true] call cScripts_fnc_setPostInitPlayerSettings;";
+};
+class JM_Student_F : Cav_B_Charlie_base_F { //General AR : 28kg
+        uniform[] = {"LOP_U_ISTS_Fatigue_19"};
+        vest[] = {"rhsusf_spcs_ocp_squadleader"};
+        backpack[] = {"B_TacticalPack_mcamo"};
+        primary[] = {"rhs_weap_m4a1_mstock","rhsusf_acc_SFMB556","rhsusf_acc_anpeq15_bk","rhsusf_acc_ACOG_RMR_3d",""};
+        secondary[] = {"","","","",""};
+        launcher[] = {"","","","",""};
+        magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",7,"SmokeShell",4,"rhs_mag_m67",4,"ACE_Chemlight_HiBlue",4,"ACE_Chemlight_HiYellow",4,"B_IR_Grenade",2,"SmokeShellYellow",4,"SmokeShellBlue",4};
+        items[] = {"ACE_quikclot",16,"ACE_tourniquet",4,"ACE_Flashlight_XL50","ACE_MapTools","ACE_microDAGR","ACRE_PRC152","ACRE_PRC152","rhsusf_ANPVS_14","rhsusf_ach_helmet_camo_ocp","rhsusf_oakley_goggles_clr","ACE_EntrenchingTool","ACE_HuntIR_monitor","ACE_SpraypaintBlack","rhs_weap_rsp30_green",3};
+        binoculars[] = {"ACE_Vector"};
+        compass[] = {"ItemCompass"};
+        goggles[] = {""};
+        gps[] = {""};
+        headgear[] = {"DAR_JMCap_Blk"};
+        map[] = {"ItemMap"};
+        nvgs[] = {""};
+        watch[] = {"ACE_Altimeter"};
+        insignia[] = {"Cav_Insignia_Specialized_Airborne"};
+    preLoadout = "[(_this select 0), 'charlie', 0, 0] call cScripts_fnc_setPreInitPlayerSettings;";
+    postLoadout = "[(_this select 0),true,true] call cScripts_fnc_setPostInitPlayerSettings;";
+};

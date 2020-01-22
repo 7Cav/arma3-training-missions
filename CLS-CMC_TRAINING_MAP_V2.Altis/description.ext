@@ -1,0 +1,31 @@
+/*           INFO            */
+
+    dev                 = "SSG Argus.J";
+    author              = "SSG Argus.J & Waldie.A";
+
+    onLoadName          = "CLS & CMC Training Map v2";
+    onLoadMission       = "ArmA 3 School of Infantry";
+    onLoadIntro         = "3rd Platoon Bravo Troop!";
+
+    loadScreen          = "Data\MissionLogo512.paa";
+    overviewPicture     = "Data\MissionLogo512.paa";
+
+/*           RULES            */
+
+    disabledAI              = true;
+    //disableChannels[]       = {0,2,6};
+
+    forceRotorLibSimulation = 0;
+
+/*          RESPAWN           */
+
+    // Name a marker "respawn_west" or a veichle "respawn_vehicle_west" for set spawn.
+    // See https://community.bistudio.com/wiki/Arma_3_Respawn for more info on respawn.
+    respawn         = BASE;
+    respawnDelay    = 4;
+
+/*          SYSTEMS           */
+
+    enableDebugConsole = 1;
+
+/*           OTHER            */
