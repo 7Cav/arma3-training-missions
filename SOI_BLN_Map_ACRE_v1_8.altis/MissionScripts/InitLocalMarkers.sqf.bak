@@ -1,0 +1,113 @@
+waitUntil {!isNull player};
+_unit = _this select 0;
+
+if (typeOf _unit == "rhsusf_usmc_marpat_wd_officer") then
+{
+		_mrk11 = createMarkerLocal["nav_11",getMarkerPos "nav1_start"];
+		_mrk11 setMarkerTextLocal "NAV 1 START POINT";
+		_mrk11 setMarkerColorLocal "ColorBLACK";
+		_mrk11 setMarkerDirLocal 300;
+		_mrk11 setMarkerTypeLocal "mil_start";		
+		
+		_mrk12 = createMarkerLocal["nav_12",getMarkerPos "nav1_end"];
+		_mrk12 setMarkerTextLocal "NAV 1 END GR 1269 2058";
+		_mrk12 setMarkerColorLocal "ColorBLACK";
+		_mrk12 setMarkerDirLocal 0;
+		_mrk12 setMarkerTypeLocal "mil_destroy";		
+		
+		_mrk21 = createMarkerLocal["nav_21",getMarkerPos "nav2_start"];
+		_mrk21 setMarkerTextLocal "NAV 2 START POINT";
+		_mrk21 setMarkerColorLocal "ColorBLACK";
+		_mrk21 setMarkerDirLocal 230;
+		_mrk21 setMarkerTypeLocal "mil_start";		
+		
+		_mrk22 = createMarkerLocal["nav_22",getMarkerPos "nav2_end"];
+		_mrk22 setMarkerTextLocal "NAV 2 END GR 1966 1679";
+		_mrk22 setMarkerColorLocal "ColorBLACK";
+		_mrk22 setMarkerDirLocal 0;
+		_mrk22 setMarkerTypeLocal "mil_destroy";		
+		
+		_mrk31 = createMarkerLocal["nav_31",getMarkerPos "nav3_start"];
+		_mrk31 setMarkerTextLocal "NAV 3 START POINT";
+		_mrk31 setMarkerColorLocal "ColorBLACK";
+		_mrk31 setMarkerDirLocal 9;
+		_mrk31 setMarkerTypeLocal "mil_start";		
+		
+		_mrk32 = createMarkerLocal["nav_32",getMarkerPos "nav3_end"];
+		_mrk32 setMarkerTextLocal "NAV 3 END GR 2031 1631";
+		_mrk32 setMarkerColorLocal "ColorBLACK";
+		_mrk32 setMarkerDirLocal 0;
+		_mrk32 setMarkerTypeLocal "mil_destroy";		
+
+		_mrk41 = createMarkerLocal["nav_41",getMarkerPos "nav4_start"];
+		_mrk41 setMarkerTextLocal "NAV 4 START POINT";
+		_mrk41 setMarkerColorLocal "ColorBLACK";
+		_mrk41 setMarkerDirLocal 188;
+		_mrk41 setMarkerTypeLocal "mil_start";		
+		
+		_mrk42 = createMarkerLocal["nav_42",getMarkerPos "nav4_end"];
+		_mrk42 setMarkerTextLocal "NAV 4 END GR 1838 1171";
+		_mrk42 setMarkerColorLocal "ColorBLACK";
+		_mrk42 setMarkerDirLocal 0;
+		_mrk42 setMarkerTypeLocal "mil_destroy";		
+
+		_mrk51 = createMarkerLocal["nav_51",getMarkerPos "nav5_start"];
+		_mrk51 setMarkerTextLocal "NAV 5 START POINT";
+		_mrk51 setMarkerColorLocal "ColorBLACK";
+		_mrk51 setMarkerDirLocal 9;
+		_mrk51 setMarkerTypeLocal "mil_start";		
+		
+		_mrk52 = createMarkerLocal["nav_52",getMarkerPos "nav5_end"];
+		_mrk52 setMarkerTextLocal "NAV 5 END GR 0969 1425";
+		_mrk52 setMarkerColorLocal "ColorBLACK";
+		_mrk52 setMarkerDirLocal 0;
+		_mrk52 setMarkerTypeLocal "mil_destroy";		
+		
+		_mrk61 = createMarkerLocal["nav_61",getMarkerPos "nav6_start"];
+		_mrk61 setMarkerTextLocal "NAV 6 START POINT";
+		_mrk61 setMarkerColorLocal "ColorBLACK";
+		_mrk61 setMarkerDirLocal 125;
+		_mrk61 setMarkerTypeLocal "mil_start";		
+		
+		_mrk62 = createMarkerLocal["nav_62",getMarkerPos "nav6_end"];
+		_mrk62 setMarkerTextLocal "NAV 6 END GR 0744 1293";
+		_mrk62 setMarkerColorLocal "ColorBLACK";
+		_mrk62 setMarkerDirLocal 0;
+		_mrk62 setMarkerTypeLocal "mil_destroy";		
+		
+		_mrk71 = createMarkerLocal["nav_71",getMarkerPos "nav7_start"];
+		_mrk71 setMarkerTextLocal "NAV 7 START POINT";
+		_mrk71 setMarkerColorLocal "ColorBLACK";
+		_mrk71 setMarkerDirLocal 81;
+		_mrk71 setMarkerTypeLocal "mil_start";		
+		
+		_mrk72 = createMarkerLocal["nav_72",getMarkerPos "nav7_end"];
+		_mrk72 setMarkerTextLocal "NAV 7 END GR 1079 1760";
+		_mrk72 setMarkerColorLocal "ColorBLACK";
+		_mrk72 setMarkerDirLocal 0;
+		_mrk72 setMarkerTypeLocal "mil_destroy";		
+		
+		_mrk81 = createMarkerLocal["nav_81",getMarkerPos "nav8_start"];
+		_mrk81 setMarkerTextLocal "NAV 8 START POINT";
+		_mrk81 setMarkerColorLocal "ColorBLACK";
+		_mrk81 setMarkerDirLocal 315;
+		_mrk81 setMarkerTypeLocal "mil_start";		
+		
+		_mrk82 = createMarkerLocal["nav_82",getMarkerPos "nav8_end"];
+		_mrk82 setMarkerTextLocal "NAV 8 END GR 1031 2013";
+		_mrk82 setMarkerColorLocal "ColorBLACK";
+		_mrk82 setMarkerDirLocal 0;
+		_mrk82 setMarkerTypeLocal "mil_destroy";		
+		
+		_mrk91 = createMarkerLocal["terrain_assoc",getMarkerPos "terrain"];
+		_mrk91 setMarkerTextLocal "CLASSROOM AREA";
+		_mrk91 setMarkerColorLocal "ColorBLACK";
+		_mrk91 setMarkerDirLocal 0;
+		_mrk91 setMarkerTypeLocal "mil_triangle";		
+		
+		_mrk101 = createMarkerLocal["marker_note",getMarkerPos "markernote"];
+		_mrk101 setMarkerTextLocal "NOTE: ONLY INSTRUCTORS CAN SEE MARKERS IN BLACK.";
+		_mrk101 setMarkerColorLocal "ColorBLACK";
+		_mrk101 setMarkerDirLocal 0;
+		_mrk101 setMarkerTypeLocal "mil_triangle";		
+	};
