@@ -1,0 +1,20 @@
+CeaseFire1: All lanes, cease fire and place your weapon on safe
+CeaseFireSafe: Cease fire and safe your weapon
+Expert
+Kneel: Take a kneeling position
+Lane1
+Lane2
+Lane3
+Lane4
+Lane5
+Lane6
+LoadStandby: Load your weapon and standby for go
+Marksman
+NoGo
+Prone1: Assume a prone position and scan your lane
+Prone2: Assume a prone position
+RangeIsHot
+Reload: Reload one 20 round magazine
+Sharpshooter
+StandbyScore: Standby for final score
+TimeStandby: That's time, standby for scoring

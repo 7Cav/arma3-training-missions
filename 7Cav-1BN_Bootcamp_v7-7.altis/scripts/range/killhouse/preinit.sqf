@@ -1,0 +1,1 @@
+kh_stoplight_lights = [];
