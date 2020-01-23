@@ -8,8 +8,8 @@ class CfgSettings {
     useStartHint                =   1;      // 0 or 1 Allow the mission to run the RedLightHint or TrainingMissionHint depends on mission type (Default: 1)
     setRedLightTime             =   30;     // Seconds for how long it is red light (Default: 60)
     setTrainingHintTime         =   15;     // Seconds for how long the hint is shown (Default: 15)
-    setCustomHintTopic          =   "My custom Mission!"; // Sets a custom mission hint topic. (Requires: isMissionType=0)
-    setCustomHintText           =   "I have design this mission! Yey for me!"; // Sets a custom mission hint text. (Requires: isMissionType=0)
+    setCustomHintTopic          =   "";     // Sets a custom mission hint topic. (Requires: isMissionType=0)
+    setCustomHintText           =   "";     // Sets a custom mission hint text. (Requires: isMissionType=0)
 
     showDiaryRecords            =   1;      // 0 or 1 Allow the mission to add Radio Reports and 7th Cavalry records on mission start. (Default: 1)
 
