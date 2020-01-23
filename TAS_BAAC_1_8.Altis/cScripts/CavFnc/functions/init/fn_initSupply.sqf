@@ -1,15 +1,25 @@
+#include "..\script_component.hpp";
 /*
  * Author: CPL.Brostrom.A
- * This function is executed on all object of a given classname both on mission start and ongoing mission.
+ * This function add eventhandelers chaning the inventory of all crates.
  *
  * Arguments:
+ * None
+ *
+ * Return Value:
+ * Nothing
  *
  * Example:
- *  call cScripts_fnc_initSupply;
+ * call cScripts_fnc_initSupply
+ *
+ * Public: No
  */
 
-#include "..\script_component.hpp";
 if (!isServer) exitWith {};
+
+#ifdef DEBUG_MODE
+    ["Applying EH init to supply crates to handle inventory and settings."] call FUNC(logInfo);
+#endif
 
 // Supply Crates
 ["B_CargoNet_01_ammo_F", "init", {

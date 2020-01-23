@@ -1,8 +1,35 @@
+class Cav_B_Unarmed_Local : CommonBlufor {
+    backpack[] = {""};
+    goggles[] = {""};
+    headgear[] = {""};
+    uniform[] = {"rhs_uniform_cu_ocp_1stcav"};
+    vest[] = {""};
+
+    primary[] = {""};
+    secondary[] = {""};
+    launcher[] = {""};
+
+    binoculars[] = {""};
+
+    magazines[] = {""};
+    items[] = {""};
+
+    compass[] = {"ItemCompass"};
+    gps[] = {""};
+    map[] = {"ItemMap"};
+    nvgs[] = {""};
+    watch[] = {"itemWatch"};
+
+    insignia[] = {""};
+    preLoadout = "";
+    postLoadout = "";
+};
+
 //  S 3   I N S T R U C T O R S   A N D   S T U D E N T S
 
 // SCHOOL OF INFANTRY
 
-class CAV_SOI_INSTR : CAV_Charlie_Base {  // Instructor
+class CAV_SOI_INSTR : Cav_B_Charlie_base_F {
 
     uniform[] = {"LOP_U_ISTS_Fatigue_19"};
     headgear[] = {"DAR_Beret_Mar"};
@@ -47,11 +74,11 @@ class CAV_SOI_INSTR : CAV_Charlie_Base {  // Instructor
 
     insignia[] = {"Follow_Me"};
 
-    preLoadout = "[(_this select 0), 'training', 2, true] call cScripts_fnc_setPreInitPlayerSettings; \
+    preLoadout = "[(_this select 0), 'training', 2, 2] call cScripts_fnc_setPreInitPlayerSettings; \
         (_this select 0) allowDamage false;";
 };
 
-class CAV_JM_INSTR : CAV_Charlie_Base {  // Instructor
+class CAV_JM_INSTR : Cav_B_Charlie_base_F {
 
     uniform[] = {"LOP_U_ISTS_Fatigue_19"};
     headgear[] = {"DAR_JMCap_Blk"};
@@ -93,16 +120,12 @@ class CAV_JM_INSTR : CAV_Charlie_Base {  // Instructor
 
     gps[] = {"ItemAndroid"};
 
-    insignia[] = {"CAG"};
-
-    preLoadout = " \
-        (_this select 0) setVariable [""CAV_isTrainingUnit"", true]; \
-        (_this select 0) setVariable [""ACE_medical_medicClass"", 2, true]; \
-        (_this select 0) allowDamage false; \
-        (_this select 0) setVariable [""ACE_isEngineer"", true];";
+    insignia[] = {"Cav_Insignia_Specialized_CAG"};
+    preLoadout = "[(_this select 0), 'training', 2, 2] call cScripts_fnc_setPreInitPlayerSettings; \
+        (_this select 0) allowDamage false;";
 };
 
-class CAV_SOI_STUD : CAV_Bravo_Base {  // Rifleman
+class CAV_SOI_STUD : Cav_B_Bravo_base_F {
     
     vest[] = {"rhsusf_iotv_ocp_Rifleman"};
     backpack[] = {"B_Carryall_mcamo"};
@@ -117,13 +140,13 @@ class CAV_SOI_STUD : CAV_Bravo_Base {  // Rifleman
         "rhs_200rnd_556x45_M_SAW",2
     };
 
-    preLoadout = "[(_this select 0), 'training', 2, true] call cScripts_fnc_setPreInitPlayerSettings; \
+    preLoadout = "[(_this select 0), 'training', 2, 2] call cScripts_fnc_setPreInitPlayerSettings; \
         (_this select 0) allowDamage false;";
 };
 
 // THE ARMOR SCHOOL
 
-class CAV_TAS_INSTR : CAV_Bravo_Base {  // Instructor
+class CAV_TAS_INSTR : Cav_B_Bravo_base_F {
 
     headgear[] = {"H_Cap_usblack"};
     goggles[] = {"rhsusf_shemagh_od"};
@@ -173,11 +196,11 @@ class CAV_TAS_INSTR : CAV_Bravo_Base {  // Instructor
 
     gps[] = {"ItemAndroid"};
 
-    preLoadout = "[(_this select 0), 'training', 2, true] call cScripts_fnc_setPreInitPlayerSettings; \
+    preLoadout = "[(_this select 0), 'training', 2, 2] call cScripts_fnc_setPreInitPlayerSettings; \
         (_this select 0) allowDamage false;";
 };
 
-class CAV_TAS_STUD : CAV_Bravo_Base {  // Crewman
+class CAV_TAS_STUD : Cav_B_Bravo_base_F {
     headgear[] = {"rhsusf_cvc_green_helmet"};
     goggles[] = {"rhsusf_shemagh_gogg_tan"};
     vest[] = {"rhsusf_iotv_ocp_Repair"};
@@ -216,13 +239,13 @@ class CAV_TAS_STUD : CAV_Bravo_Base {  // Crewman
     gps[] = {"ItemAndroid"};
 
     preLoadout = " \
-        [(_this select 0), 'training', 2, true] call cScripts_fnc_setPreInitPlayerSettings; \
+        [(_this select 0), 'training', 2, 2] call cScripts_fnc_setPreInitPlayerSettings; \
         (_this select 0) allowDamage false;";
 };
 
 // AVIATION CENTER OF EXCELLENCE
 
-class CAV_ACE_ROTARY_INSTR : CAV_Alpha_Base {  // Rotary Instructor Pilots
+class CAV_ACE_ROTARY_INSTR : Cav_B_Alpha_base_F {
 
     goggles[] = {"rhsusf_shemagh_od"};
     backpack[] = {"B_Carryall_mcamo"};
@@ -231,11 +254,11 @@ class CAV_ACE_ROTARY_INSTR : CAV_Alpha_Base {  // Rotary Instructor Pilots
     gps[] = {"ItemcTab"};
 
     preLoadout = " \
-        [(_this select 0), 'training', 2, true] call cScripts_fnc_setPreInitPlayerSettings; \
+        [(_this select 0), 'training', 2, 2] call cScripts_fnc_setPreInitPlayerSettings; \
         (_this select 0) allowDamage false;";
 };
 
-class CAV_ACE_ROTARY_STUD : CAV_Alpha_Base {  // Rotary Instructor Pilots
+class CAV_ACE_ROTARY_STUD : Cav_B_Alpha_base_F {
 
     backpack[] = {"B_Carryall_mcamo"};
     headgear[] = {"rhsusf_hgu56p_visor_green"};
@@ -243,11 +266,11 @@ class CAV_ACE_ROTARY_STUD : CAV_Alpha_Base {  // Rotary Instructor Pilots
     gps[] = {"ItemcTab"};
 
     preLoadout = " \
-        [(_this select 0), 'training', 2, true] call cScripts_fnc_setPreInitPlayerSettings; \
+        [(_this select 0), 'training', 2, 2] call cScripts_fnc_setPreInitPlayerSettings; \
         (_this select 0) allowDamage false;";
 };
 
-class CAV_ACE_FIXED_INSTR : CAV_Alpha_Base {
+class CAV_ACE_FIXED_INSTR : Cav_B_Alpha_base_F {
 
     nvgs[] = {""};
     backpack[] = {""};
@@ -292,11 +315,11 @@ class CAV_ACE_FIXED_INSTR : CAV_Alpha_Base {
     };
 
     preLoadout = " \
-        [(_this select 0), 'training', 2, true] call cScripts_fnc_setPreInitPlayerSettings; \
+        [(_this select 0), 'training', 2, 2] call cScripts_fnc_setPreInitPlayerSettings; \
         (_this select 0) allowDamage false;";
 };
 
-class CAV_ACE_FIXED_STUD : CAV_Alpha_Base {
+class CAV_ACE_FIXED_STUD : Cav_B_Alpha_base_F {
 
     nvgs[] = {""};
     backpack[] = {""};
@@ -341,6 +364,6 @@ class CAV_ACE_FIXED_STUD : CAV_Alpha_Base {
     };
 
     preLoadout = " \
-        [(_this select 0), 'training', 2, true] call cScripts_fnc_setPreInitPlayerSettings; \
+        [(_this select 0), 'training', 2, 2] call cScripts_fnc_setPreInitPlayerSettings; \
         (_this select 0) allowDamage false;";
 };

@@ -1,11 +1,14 @@
+#include "..\script_component.hpp";
 /*
  * Author: CPL.Brostrom.A and SGT.Argus.J
- * This create a diary record subject called by initDocuments.
+ * This function write a diary record.
  *
  * Arguments:
+ * None
  *
  * Example:
- * call cScripts_fnc_DocRadio_MEDEVAC;
+ *  call cScripts_fnc_Doc_MEDEVAC
+ *
  */
 
 player createDiaryRecord["radioReports",
