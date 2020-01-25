@@ -81,6 +81,11 @@ def main():
     for mission in mission_list:
         print('\nSetting up dev links for {}'.format(mission))
 
+        # Check if its a mission
+        if not os.path.exists('{}\\{}\\mission.sqm'.format(rootDir,mission)):
+            print('{} is not a mission skipping...'.format(mission))
+            continue
+
         #check if mission already have cScripts
         if os.path.exists('{}\\{}\\cScripts'.format(rootDir,mission)):
             print('cScripts already installed in this mission skipping...')
