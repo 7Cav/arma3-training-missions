@@ -1,1 +1,0 @@
-player moveincargo c130_HALO_1;

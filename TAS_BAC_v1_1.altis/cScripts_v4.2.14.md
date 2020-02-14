@@ -1,2 +1,0 @@
-cScripts version 4.2.14
-Rev: c26177eeeab8711c3ae83856264d5298bdad8849
