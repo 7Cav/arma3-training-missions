@@ -2,7 +2,7 @@ This pull request will:
 - Please list functions of this pull request
 
 
-This pull request resloves the following issues:
+This pull request resolves the following issues:
 Fixes #
 
 i.e.
