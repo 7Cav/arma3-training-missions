@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=386;
+		nextID=427;
 	};
 	class Camera
 	{
-		pos[]={15226.425,107.91763,17284.521};
-		dir[]={0.3648726,-0.58839089,0.72162366};
-		up[]={0.26550254,0.80856597,0.52509284};
-		aside[]={0.89244241,7.187482e-007,-0.45124432};
+		pos[]={15218.001,62.882851,17306.83};
+		dir[]={-0.19713394,-0.92192346,0.33357543};
+		up[]={-0.46903476,0.38741559,0.79366785};
+		aside[]={0.86093545,1.1557713e-006,0.50878865};
 	};
 };
 binarizationWanted=0;
@@ -122,6 +122,7 @@ addons[]=
 	"A3_Structures_F_EPC_Items_Electronics",
 	"A3_Props_F_Exp_Military_Camps",
 	"A3_Structures_F_Mil_Cargo",
+	"CST_R_Tower",
 	"CUP_Buildings_Config",
 	"A3_Weapons_F",
 	"A3_Characters_F_Orange_Facewear",
@@ -154,7 +155,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=70;
+		items=71;
 		class Item0
 		{
 			className="rhs_c_troops";
@@ -528,97 +529,102 @@ class AddonsMetaData
 		};
 		class Item55
 		{
+			className="CST_R_Tower";
+			name="CST_R_Tower";
+		};
+		class Item56
+		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item56
+		class Item57
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item57
+		class Item58
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item58
+		class Item59
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item59
+		class Item60
 		{
 			className="ace_compat_rhs_usf3";
 			name="ACE3 - RHS USF Compatibility";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item60
+		class Item61
 		{
 			className="DAR_CCO_HQ";
 			name="DAR_CCO_HQ";
 		};
-		class Item61
+		class Item62
 		{
 			className="A3_Structures_F_Enoch_Infrastructure";
 			name="Arma 3 Contact Platform - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item62
+		class Item63
 		{
 			className="CUP_CAMisc_ACR_3DMarkers";
 			name="CUP_CAMisc_ACR_3DMarkers";
 		};
-		class Item63
+		class Item64
 		{
 			className="rhs_c_cars";
 			name="Tigr vehicles";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item64
+		class Item65
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item65
+		class Item66
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item66
+		class Item67
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item67
+		class Item68
 		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item68
+		class Item69
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item69
+		class Item70
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
@@ -7519,7 +7525,7 @@ class Mission
 											};
 											id=2666;
 											type="TargetBootcampHuman_F";
-											atlOffset=3.8146973e-006;
+											atlOffset=0.18267441;
 										};
 										class Item42
 										{
@@ -18860,6 +18866,7 @@ class Mission
 									};
 									id=3084;
 									type="rhs_vdv_arifleman";
+									atlOffset=0.1057148;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -18966,6 +18973,7 @@ class Mission
 								combatMode="BLUE";
 							};
 							id=3083;
+							atlOffset=0.1057148;
 						};
 						class Item7
 						{
@@ -25720,7 +25728,7 @@ class Mission
 							text="BIT REACT TO CONTACT RANGE 2";
 							type="mil_start";
 							colorName="ColorOrange";
-							angle=56.681965;
+							angle=56.681961;
 							id=3255;
 							atlOffset=-0.00023651123;
 						};
