@@ -1,2 +1,0 @@
-private _reHealAction = ["cScriptsHealAce", "Heal Player", "\z\ACE\addons\medical_gui\ui\cross.paa", { [player, cursorTarget] call ace_medical_treatment_fnc_fullHeal }, {true}] call ace_interact_menu_fnc_createAction; 
-[_this,1,["ACE_SelfActions"], _reHealAction] call ace_interact_menu_fnc_addActionToObject;
