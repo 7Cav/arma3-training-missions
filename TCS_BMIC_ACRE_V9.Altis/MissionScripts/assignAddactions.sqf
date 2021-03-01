@@ -1,2 +1,0 @@
-this addAction ["<t color='#00ff00'>    Bounding P.R. On</t>",{[[],"MissionScripts\pr.sqf"] remoteExec ["BIS_fnc_execVM"]},nil,245,false,true,"","(typeOf player == 'rhsusf_usmc_marpat_wd_crewman') && (this getVariable ['Cav_showRangeActions',false]) && !range_PR"];
-this addAction ["<t color='#ff0000'>    Bounding P.R. Off</t>",{[[],"MissionScripts\pr.sqf"] remoteExec ["BIS_fnc_execVM"]},nil,245,false,true,"","(typeOf player == 'rhsusf_usmc_marpat_wd_crewman') && (this getVariable ['Cav_showRangeActions',false]) && range_PR"];
