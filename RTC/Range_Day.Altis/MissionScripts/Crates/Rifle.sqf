@@ -18,7 +18,7 @@ _box addAction ["  Rifle Range Loadout", {
         ]],
         ["rhsusf_spcs_ocp_rifleman_alt", []],
         ["",[]],
-        "rhsusf_ach_helmet_headset_ocp_alt", "",["", "", "", "", [], [], ""],
+        "rhsusf_ach_helmet_ocp", "",["", "", "", "", [], [], ""],
         ["ItemMap","","","ItemCompass","ItemWatch",""]
     ];
 

@@ -18,7 +18,7 @@ _box addAction ["  MAAWS Range Loadout", {
         ]],
         ["rhsusf_spcs_ocp_rifleman_alt", []],
         ["B_Carryall_mcamo",[["rhs_mag_maaws_HEAT",3,1]]],
-        "rhsusf_ach_helmet_headset_ocp_alt", "",["ACE_Vector", "", "", "", [], [], ""],
+        "rhsusf_ach_helmet_ocp", "",["ACE_Vector", "", "", "", [], [], ""],
         ["ItemMap","","","ItemCompass","ItemWatch",""]
     ];
     

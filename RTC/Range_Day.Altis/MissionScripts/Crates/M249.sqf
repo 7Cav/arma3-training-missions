@@ -18,7 +18,7 @@ _box addAction ["  MG Range Loadout", {
         ]],
         ["rhsusf_spcs_ocp_saw", []],
         ["",[]],
-        "rhsusf_ach_helmet_headset_ocp_alt", "",["", "", "", "", [], [], ""],
+        "rhsusf_ach_helmet_ocp", "",["", "", "", "", [], [], ""],
         ["ItemMap","","","ItemCompass","ItemWatch",""]
     ];
 

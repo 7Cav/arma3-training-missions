@@ -1,7 +1,7 @@
 
 params ["_box"];
 
-[_box, true] call ace_arsenal_fnc_initBox;
+//[_box, true] call ace_arsenal_fnc_initBox;
 
 [_box, -1] call ace_cargo_fnc_setSize;
 
