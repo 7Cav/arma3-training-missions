@@ -18,7 +18,7 @@ addMissionEventHandler ["Draw3D",
                     // - normal height
                     // - no rotation
                     // - player's in-game name under the icon
-                    drawIcon3D[getText (configFile >> "CfgVehicles" >> typeOf _x >> "icon"),[1,0,0,0.5],[getPos _x select 0,getPos _x select 1,(getPos _x select 2)+3],1,1,0, str (floor(_x distance player))];
+                    drawIcon3D[getText (configFile >> "CfgVehicles" >> typeOf _x >> "icon"),[0,0,1,0.25],[getPos _x select 0,getPos _x select 1,(getPos _x select 2)+3],1,1,0, str (floor(_x distance player))];
                 };
             } foreach allUnits;
         };
