@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=61;
+		nextID=11;
 	};
 	class Camera
 	{
-		pos[]={17450.641,28.12191,13125.504};
-		dir[]={-0.64736754,-0.43933442,0.62284702};
-		up[]={-0.31659898,0.89831626,0.30460829};
-		aside[]={0.69334185,2.2118911e-009,0.72063279};
+		pos[]={17440.58,24.032791,13131.307};
+		dir[]={-0.65817797,-0.45192263,0.60217607};
+		up[]={-0.33343333,0.89204949,0.30506429};
+		aside[]={0.67503864,-8.9057721e-008,0.73781252};
 	};
 };
 binarizationWanted=0;
@@ -62,9 +62,9 @@ addons[]=
 	"A3_Structures_F_Argo_Cultural_Statues",
 	"cav_textures",
 	"cav_flag",
-	"A3_Structures_F_Civ_InfoBoards",
 	"acre_sys_oe303",
 	"acre_sys_gsa",
+	"A3_Structures_F_Civ_InfoBoards",
 	"A3_Ui_F",
 	"cav_troops_training",
 	"rhsusf_vehicles",
@@ -1495,7 +1495,7 @@ class Mission
 			name="Base";
 			class Entities
 			{
-				items=23;
+				items=24;
 				class Item0
 				{
 					dataType="Layer";
@@ -4027,46 +4027,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17428.766,15.191425,13156.27};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="call{[this,""Teleport to Lane 1"", radio_1] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 2"", radio_2] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 3"", radio_3] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 4"", radio_4] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 5"", radio_5] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 6"", radio_6] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 7"", radio_7] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 8"", radio_8] call cScripts_fnc_teleport;" \n "this addAction [""Teleport to Radio Tower"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10]}";
-						name="radio_0";
-					};
-					id=2082;
-					type="Land_InfoStand_V1_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="z\cav\addons\flag\data\flag_00_ca.paa";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17401.27,18.324331,13200.159};
 						angles[]={0,0.93987739,0};
 					};
@@ -4078,7 +4038,7 @@ class Mission
 					type="acre_oe_303";
 					atlOffset=0.45800209;
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4093,7 +4053,7 @@ class Mission
 					id=2117;
 					type="vhf30108Item";
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4109,7 +4069,7 @@ class Mission
 					type="vhf30108Item";
 					atlOffset=2.4876003;
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4150,7 +4110,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4167,7 +4127,7 @@ class Mission
 					id=2084;
 					type="B_supplyCrate_F";
 				};
-				class Item8
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4185,7 +4145,7 @@ class Mission
 					type="B_supplyCrate_F";
 					atlOffset=5.3405762e-005;
 				};
-				class Item9
+				class Item8
 				{
 					dataType="Marker";
 					position[]={17415.895,31.726,13182.8};
@@ -4196,7 +4156,7 @@ class Mission
 					id=1122;
 					atlOffset=17.917528;
 				};
-				class Item10
+				class Item9
 				{
 					dataType="Marker";
 					position[]={17426.438,14.482,13158.342};
@@ -4207,7 +4167,7 @@ class Mission
 					id=2164;
 					atlOffset=-0.1123457;
 				};
-				class Item11
+				class Item10
 				{
 					dataType="Marker";
 					position[]={17437.258,14.476,13137.932};
@@ -4218,7 +4178,7 @@ class Mission
 					id=2163;
 					atlOffset=-0.16400051;
 				};
-				class Item12
+				class Item11
 				{
 					dataType="Marker";
 					position[]={17415,14.479,13131};
@@ -4229,7 +4189,7 @@ class Mission
 					id=2162;
 					atlOffset=-0.16100025;
 				};
-				class Item13
+				class Item12
 				{
 					dataType="Marker";
 					position[]={17433.533,13.813965,13146.283};
@@ -4239,7 +4199,7 @@ class Mission
 					id=1146;
 					atlOffset=-0.8260355;
 				};
-				class Item14
+				class Item13
 				{
 					dataType="Layer";
 					name="BluFor";
@@ -4556,7 +4516,7 @@ class Mission
 					id=2006;
 					atlOffset=185.97;
 				};
-				class Item15
+				class Item14
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4575,7 +4535,7 @@ class Mission
 					type="rhsusf_m998_w_4dr_halftop";
 					atlOffset=-1.9073486e-006;
 				};
-				class Item16
+				class Item15
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4593,7 +4553,7 @@ class Mission
 					id=2358;
 					type="rhsusf_m998_w_4dr_halftop";
 				};
-				class Item17
+				class Item16
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4612,7 +4572,7 @@ class Mission
 					type="rhsusf_m998_w_4dr_halftop";
 					atlOffset=-9.5367432e-007;
 				};
-				class Item18
+				class Item17
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4631,7 +4591,7 @@ class Mission
 					type="rhsusf_m998_w_4dr_halftop";
 					atlOffset=-9.5367432e-007;
 				};
-				class Item19
+				class Item18
 				{
 					dataType="Marker";
 					position[]={17397.686,14.582,13164.082};
@@ -4642,7 +4602,7 @@ class Mission
 					id=2366;
 					atlOffset=-0.00025749207;
 				};
-				class Item20
+				class Item19
 				{
 					dataType="Marker";
 					position[]={17421.385,14.64,13129.223};
@@ -4652,7 +4612,7 @@ class Mission
 					alpha=0.5;
 					id=2370;
 				};
-				class Item21
+				class Item20
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4671,11 +4631,10 @@ class Mission
 					type="SignAd_Sponsor_ARMEX_F";
 					atlOffset=0.050819397;
 				};
-				class Item22
+				class Item21
 				{
 					dataType="Layer";
 					name="Classroom";
-					state=1;
 					class Entities
 					{
 						items=6;
@@ -4729,7 +4688,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{" \n "this execVM ""MissionScripts\Slides\Slides.sqf"";" \n "}";
+								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\Slides.sqf"";" \n "}";
 								name="con_1";
 								disableSimulation=1;
 							};
@@ -4796,9 +4755,44 @@ class Mission
 					id=4;
 					atlOffset=0.53870869;
 				};
+				class Item22
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17428.766,15.204374,13156.271};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="call{" \n "this setObjectTextureGlobal [0, ""z\cav\addons\flag\data\flag_00_ca.paa""];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Lane 1</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos radio_1);" \n " _markers = [""laneDot_1"",""laneEllipse_1""];" \n " {_x setMarkerAlphaLocal 1} forEach _markers;" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Lane 2</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos radio_2);" \n " {_x setMarkerAlphaLocal 1} forEach [""laneDot_2"", ""laneEllipse_2""];" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Lane 3</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos radio_3);" \n " {_x setMarkerAlphaLocal 1} forEach [""laneDot_3"", ""laneEllipse_3""];" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Lane 4</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos radio_4);" \n " {_x setMarkerAlphaLocal 1} forEach [""laneDot_4"", ""laneEllipse_4""];" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Lane 5</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos radio_5);" \n " {_x setMarkerAlphaLocal 1} forEach [""laneDot_5"", ""laneEllipse_5""];" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Lane 6</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos radio_6);" \n " {_x setMarkerAlphaLocal 1} forEach [""laneDot_6"", ""laneEllipse_6""];" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Lane 7</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos radio_7);" \n " {_x setMarkerAlphaLocal 1} forEach [""laneDot_7"", ""laneEllipse_7""];" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Lane 8</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos radio_8);" \n " {_x setMarkerAlphaLocal 1} forEach [""laneDot_8"", ""laneEllipse_8""];" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Radio Tower</t>"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];}";
+						name="radio_0";
+					};
+					id=1;
+					type="Land_InfoStand_V2_F";
+					atlOffset=3.1471252e-005;
+				};
+				class Item23
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17415.621,15.812325,13130.92};
+					};
+					side="Empty";
+					class Attributes
+					{
+						init="call{this hideObjectGlobal true;}";
+						name="classroom_0";
+					};
+					id=2;
+					type="Land_InfoStand_V2_F";
+					atlOffset=0.58399963;
+				};
 			};
 			id=2007;
-			atlOffset=4.7232342;
+			atlOffset=1.0172729;
 		};
 		class Item2
 		{
@@ -4819,12 +4813,12 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_1.sqf"";" \n "" \n "[this,""Return to Assembly Area"", radio_0] call cScripts_fnc_teleport;" \n "" \n "this addAction [""Teleport to Radio Tower"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "" \n "}";
+						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_1.sqf"";" \n "" \n "this addAction [""<t color='#C9FFC9'>Return to Classroom</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos classroom_0);" \n " _caller execVM ""MissionScripts\hideMarkers.sqf"";" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Radio Tower</t>"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
 						name="radio_1";
 					};
 					id=2122;
 					type="Cav_Flag_00_Flag_F";
-					atlOffset=-3.8146973e-006;
+					atlOffset=-7.6293945e-006;
 				};
 				class Item1
 				{
@@ -4837,7 +4831,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this execVM ""MissionScripts\Lanes\Lane_2.sqf"";" \n "" \n "[this,""Return to Assembly Area"", radio_0] call cScripts_fnc_teleport;" \n "" \n "this addAction [""Teleport to Radio Tower"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
+						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_2.sqf"";" \n "" \n "this addAction [""<t color='#C9FFC9'>Return to Classroom</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos classroom_0);" \n " _caller execVM ""MissionScripts\hideMarkers.sqf"";" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Radio Tower</t>"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
 						name="radio_2";
 					};
 					id=2121;
@@ -4855,7 +4849,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_3.sqf"";" \n "" \n "[this,""Return to Assembly Area"", radio_0] call cScripts_fnc_teleport;" \n "" \n "this addAction [""Teleport to Radio Tower"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
+						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_3.sqf"";" \n "" \n "this addAction [""<t color='#C9FFC9'>Return to Classroom</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos classroom_0);" \n " _caller execVM ""MissionScripts\hideMarkers.sqf"";" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Radio Tower</t>"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
 						name="radio_3";
 					};
 					id=2124;
@@ -4872,7 +4866,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_4.sqf"";" \n "" \n "[this,""Return to Assembly Area"", radio_0] call cScripts_fnc_teleport;" \n "" \n "this addAction [""Teleport to Radio Tower"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];}";
+						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_4.sqf"";" \n "" \n "this addAction [""<t color='#C9FFC9'>Return to Classroom</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos classroom_0);" \n " _caller execVM ""MissionScripts\hideMarkers.sqf"";" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Radio Tower</t>"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
 						name="radio_4";
 					};
 					id=2123;
@@ -4889,11 +4883,12 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_5.sqf"";" \n "" \n "[this,""Return to Assembly Area"", radio_0] call cScripts_fnc_teleport;" \n "" \n "this addAction [""Teleport to Radio Tower"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
+						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_5.sqf"";" \n "" \n "this addAction [""<t color='#C9FFC9'>Return to Classroom</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos classroom_0);" \n " _caller execVM ""MissionScripts\hideMarkers.sqf"";" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Radio Tower</t>"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
 						name="radio_5";
 					};
 					id=2127;
 					type="Cav_Flag_00_Flag_F";
+					atlOffset=-9.5367432e-007;
 				};
 				class Item5
 				{
@@ -4906,7 +4901,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_6.sqf"";" \n "" \n "[this,""Return to Assembly Area"", radio_0] call cScripts_fnc_teleport;" \n "" \n "this addAction [""Teleport to Radio Tower"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
+						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_6.sqf"";" \n "" \n "this addAction [""<t color='#C9FFC9'>Return to Classroom</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos classroom_0);" \n " _caller execVM ""MissionScripts\hideMarkers.sqf"";" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Radio Tower</t>"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
 						name="radio_6";
 					};
 					id=2130;
@@ -4923,7 +4918,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_7.sqf"";" \n "" \n "[this,""Return to Assembly Area"", radio_0] call cScripts_fnc_teleport;" \n "" \n "this addAction [""Teleport to Radio Tower"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
+						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_7.sqf"";" \n "" \n "this addAction [""<t color='#C9FFC9'>Return to Classroom</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos classroom_0);" \n " _caller execVM ""MissionScripts\hideMarkers.sqf"";" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Radio Tower</t>"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
 						name="radio_7";
 					};
 					id=2131;
@@ -4940,11 +4935,12 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_8.sqf"";" \n "" \n "[this,""Return to Assembly Area"", radio_0] call cScripts_fnc_teleport;" \n "" \n "this addAction [""Teleport to Radio Tower"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
+						init="call{" \n "this execVM ""MissionScripts\Lanes\Lane_8.sqf"";" \n "" \n "this addAction [""<t color='#C9FFC9'>Return to Classroom</t>"", { " \n " params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n " _caller setPos (getPos classroom_0);" \n " _caller execVM ""MissionScripts\hideMarkers.sqf"";" \n "},nil,1.5,false,false,"""","""",10];" \n "" \n "this addAction [""<t color='#C9FFC9'>Teleport to Radio Tower</t>"", { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "  _caller setPos (getPosATL radio_tower)" \n "},nil,1.5,false,false,"""",""(player getVariable ['instructor', false])"",10];" \n "}";
 						name="radio_8";
 					};
 					id=2132;
 					type="Cav_Flag_00_Flag_F";
+					atlOffset=-3.8146973e-006;
 				};
 				class Item8
 				{
@@ -5098,7 +5094,7 @@ class Mission
 						{
 							dataType="Marker";
 							position[]={12486,34.983986,16544};
-							name="marker_212";
+							name="laneDot_1";
 							text="Lane 1";
 							type="mil_dot";
 							id=2135;
@@ -5107,7 +5103,7 @@ class Mission
 						{
 							dataType="Marker";
 							position[]={15806,40.81876,18200};
-							name="marker_213";
+							name="laneDot_2";
 							text="Lane 2";
 							type="mil_dot";
 							id=2136;
@@ -5116,7 +5112,7 @@ class Mission
 						{
 							dataType="Marker";
 							position[]={17374,75.578674,17264};
-							name="marker_214";
+							name="laneDot_3";
 							text="Lane 3";
 							type="mil_dot";
 							id=2137;
@@ -5125,7 +5121,7 @@ class Mission
 						{
 							dataType="Marker";
 							position[]={18891.861,29.254395,18147.566};
-							name="marker_215";
+							name="laneDot_4";
 							text="Lane 4";
 							type="mil_dot";
 							id=2138;
@@ -5135,7 +5131,7 @@ class Mission
 						{
 							dataType="Marker";
 							position[]={21356,14.2,15810};
-							name="marker_216";
+							name="laneDot_5";
 							text="Lane 5";
 							type="mil_dot";
 							id=2139;
@@ -5144,7 +5140,7 @@ class Mission
 						{
 							dataType="Marker";
 							position[]={20150,76.720741,12376};
-							name="marker_217";
+							name="laneDot_6";
 							text="Lane 6";
 							type="mil_dot";
 							id=2140;
@@ -5153,7 +5149,7 @@ class Mission
 						{
 							dataType="Marker";
 							position[]={18496,76.425262,10956};
-							name="marker_218";
+							name="laneDot_7";
 							text="Lane 7";
 							type="mil_dot";
 							id=2141;
@@ -5162,7 +5158,7 @@ class Mission
 						{
 							dataType="Marker";
 							position[]={20622,41.321339,9058};
-							name="marker_219";
+							name="laneDot_8";
 							text="Lane 8";
 							type="mil_dot";
 							id=2142;
@@ -5259,54 +5255,53 @@ class Mission
 						class Item16
 						{
 							dataType="Marker";
-							position[]={20622,41.321339,9058};
-							name="marker_220";
+							position[]={20622,41.320999,9058};
+							name="laneEllipse_8";
 							markerType="ELLIPSE";
 							type="ellipse";
 							colorName="ColorWEST";
-							alpha=0.5;
 							fillName="DiagGrid";
 							a=-100;
 							b=-100;
 							id=2143;
+							atlOffset=-0.00033950806;
 						};
 						class Item17
 						{
 							dataType="Marker";
-							position[]={18496,76.425262,10956};
-							name="marker_221";
+							position[]={18496,76.425003,10956};
+							name="laneEllipse_7";
 							markerType="ELLIPSE";
 							type="ellipse";
 							colorName="ColorWEST";
-							alpha=0.5;
 							fillName="DiagGrid";
 							a=-100;
 							b=-100;
 							id=2144;
+							atlOffset=-0.00025939941;
 						};
 						class Item18
 						{
 							dataType="Marker";
-							position[]={20150,76.720741,12376};
-							name="marker_222";
+							position[]={20150,76.721001,12376};
+							name="laneEllipse_6";
 							markerType="ELLIPSE";
 							type="ellipse";
 							colorName="ColorWEST";
-							alpha=0.5;
 							fillName="DiagGrid";
 							a=-100;
 							b=-100;
 							id=2145;
+							atlOffset=0.00025939941;
 						};
 						class Item19
 						{
 							dataType="Marker";
 							position[]={21356,14.2,15810};
-							name="marker_223";
+							name="laneEllipse_5";
 							markerType="ELLIPSE";
 							type="ellipse";
 							colorName="ColorWEST";
-							alpha=0.5;
 							fillName="DiagGrid";
 							a=-100;
 							b=-100;
@@ -5315,41 +5310,39 @@ class Mission
 						class Item20
 						{
 							dataType="Marker";
-							position[]={18891.906,29.260254,18147.576};
-							name="marker_224";
+							position[]={18891.906,29.26,18147.576};
+							name="laneEllipse_4";
 							markerType="ELLIPSE";
 							type="ellipse";
 							colorName="ColorWEST";
-							alpha=0.5;
 							fillName="DiagGrid";
 							a=-100;
 							b=-100;
 							id=2147;
-							atlOffset=5.381361;
+							atlOffset=5.3811073;
 						};
 						class Item21
 						{
 							dataType="Marker";
-							position[]={17374,75.578674,17264};
-							name="marker_225";
+							position[]={17374,75.579002,17264};
+							name="laneEllipse_3";
 							markerType="ELLIPSE";
 							type="ellipse";
 							colorName="ColorWEST";
-							alpha=0.5;
 							fillName="DiagGrid";
 							a=-100;
 							b=-100;
 							id=2148;
+							atlOffset=0.00032806396;
 						};
 						class Item22
 						{
 							dataType="Marker";
 							position[]={15806,42,18200};
-							name="marker_226";
+							name="laneEllipse_2";
 							markerType="ELLIPSE";
 							type="ellipse";
 							colorName="ColorWEST";
-							alpha=0.5;
 							fillName="DiagGrid";
 							a=-100;
 							b=-100;
@@ -5359,16 +5352,16 @@ class Mission
 						class Item23
 						{
 							dataType="Marker";
-							position[]={12486,34.983986,16544};
-							name="marker_227";
+							position[]={12486,34.984001,16544};
+							name="laneEllipse_1";
 							markerType="ELLIPSE";
 							type="ellipse";
 							colorName="ColorWEST";
-							alpha=0.5;
 							fillName="DiagGrid";
 							a=-100;
 							b=-100;
 							id=2150;
+							atlOffset=1.5258789e-005;
 						};
 						class Item24
 						{
