@@ -3,6 +3,8 @@ private _state = param [0, "", [""]];
 
 if (_state == "init") then {
 
+    player execVM "MissionScripts\hideMarkers.sqf";
+    
     [] call HUD_Infantry_Initialize;
 
     player setVariable ["SPM_BranchOfService", "infantry"];
