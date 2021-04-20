@@ -6,7 +6,6 @@ if (_state == "init") then {
     player execVM "MissionScripts\Markers\hideMarkers.sqf";
 
     player setVariable ["instructor", true];
-    player setVariable ["showControls", false];
 
     [] call HUD_Infantry_Initialize;
 
