@@ -1,3 +1,4 @@
+
 // Rifle Range
 [
     "targets", //range type
@@ -81,30 +82,30 @@ _group8 = [36,37,38,39,40];
         ["Assume a prone position and scan your lane",5],
         ["Range is hot!",2],
         ["Range is hot!",0,"FD_Course_Active_F"],
-        [_group1,15],
-    	[_group2,15],
-    	[_group6,15],
-    	[_group3,15],
-    	[_group8,15],
-    	[_group4,15],
-    	[_group7,15],
-    	[_group2,15],
-    	[_group1,15],
-    	[_group5,15],
+        [_group1,12],
+    	[_group2,12],
+    	[_group6,12],
+    	[_group3,12],
+    	[_group8,12],
+    	[_group4,12],
+    	[_group7,12],
+    	[_group2,12],
+    	[_group1,12],
+    	[_group5,12],
         ["Reload your weapon",10],
         ["Assume a prone position and scan your lane",5],
         ["Range is hot!",1],
         ["Range is hot!",0,"FD_Course_Active_F"],
-        [_group1,15],
-    	[_group3,15],
-    	[_group4,15],
-    	[_group2,15],
-    	[_group3,15],
-    	[_group2,15],
-    	[_group4,15],
-    	[_group1,15],
-    	[_group3,15],
-    	[_group2,15],
+        [_group1,12],
+    	[_group3,12],
+    	[_group4,12],
+    	[_group2,12],
+    	[_group3,12],
+    	[_group2,12],
+    	[_group4,12],
+    	[_group1,12],
+    	[_group3,12],
+    	[_group2,12],
         ["Cease Fire!",3],
         ["Standby for final score...",1],
         ["Range complete.",0]
@@ -115,13 +116,12 @@ _group8 = [36,37,38,39,40];
     true // use custom black target texture
 ] spawn cav_ranges_fnc_createRange;
 
-// grenade range
+// Grenade Launcher Range
 {
 	_x addEventHandler ["Explosion", {_this spawn cav_ranges_fnc_eh_explosion}];
 	_x addEventHandler ["HandleDamage", {0}];
 	_x setVariable ["cav_ranges_expDmgThreshold",0.002];
 } foreach allMissionObjects "TargetP_Inf2_F";
-
 
 _gr_delay = 16;
 [
@@ -172,6 +172,7 @@ _gr_delay = 16;
     [[1,0,0,.5],[1,0,0,.5],[1,0,0,.5],[1,0,0,.5],[1,0,0,.5],[1,0,0,.5],[1,0,0,.5],[1,0,0,.5]] // lane colors
 ] spawn cav_ranges_fnc_createRange;
 
+// Grenade Range
 [
     "targets", //range type
     "Grenade Range", // title text
@@ -192,6 +193,47 @@ _gr_delay = 16;
     ],
     nil, // target grouping (not yet implemented)
     [4,3,2], // score qualifications
+    true, // add instructor actions
+    true // use custom black target texture
+] spawn cav_ranges_fnc_createRange;
+
+// Pistol Range
+[
+    "targets", //range type
+    "Pistol Range", // title text
+    "pr", // range tag
+    8, // lane count
+    8, // targets per lane
+    [  //sequence
+        ["Load and ready your weapon",3],
+        ["Take Position 1",2],
+        ["Range is hot!",1],
+        ["Range is hot!",0,"FD_Course_Active_F"],
+        [[1,3],3],
+        [[3,5,8],4],
+        ["Take Position 2",2],
+        [[5,6,7],4],
+        [[6,8],3],
+        ["Reload one 10 round magazine",3],
+        ["Take Position 3",2],
+        [[4,6],3],
+        [[2,7,8],4],
+        ["Take Position 1",2],
+        [[1,8],3],
+        [[3,5,8],4],
+        ["Reload one 10 round magazine",3],
+        ["Take Position 3",2],
+        [[2,5,7],4],
+        [[4,8],3],
+        ["Take Position 2",2],
+        [[4,7],3],
+        [[2,6,8],4],
+        ["Cease Fire!",2],
+        ["Standby for final score...",1],
+        ["Range complete.",0]
+    ],
+    nil, // target grouping (not yet implemented)
+    [28,22,16], // score qualifications
     true, // add instructor actions
     true // use custom black target texture
 ] spawn cav_ranges_fnc_createRange;
