@@ -44,7 +44,7 @@ Goals:
 
 - [x] Dymamic Lockable Loadout crates
   - [x] Custom inventory, scroll wheel kits
-  - [x] Lockable by instructors
+  - [ ] Lockable by instructors
   - [x] Disable damage, drag, carry
 
 - [ ] Instructor instant respond to Zeus ping
