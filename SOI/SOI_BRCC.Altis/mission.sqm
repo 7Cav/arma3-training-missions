@@ -27,7 +27,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="SOI_BRCC_5_1_0_0";
+sourceName="SOI_BRCC";
 addons[]=
 {
 	"A3_Modules_F_Curator_Curator",
@@ -4651,7 +4651,6 @@ class Mission
 							class Attributes
 							{
 								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\Slides.sqf"";" \n "}";
-								name="bb_1";
 								disableSimulation=1;
 							};
 							id=1949;
@@ -4689,7 +4688,6 @@ class Mission
 							class Attributes
 							{
 								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\Slides.sqf"";" \n "}";
-								name="con_1";
 								disableSimulation=1;
 							};
 							id=1881;
@@ -4709,7 +4707,6 @@ class Mission
 							class Attributes
 							{
 								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\Slides.sqf"";" \n "}";
-								name="con_2";
 								disableSimulation=1;
 							};
 							id=1884;
