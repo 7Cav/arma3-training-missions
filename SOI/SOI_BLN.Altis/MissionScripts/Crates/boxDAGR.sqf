@@ -40,7 +40,7 @@ _box addAction ["  <t color='#ff0000'><img size='1' image='\a3\ui_f\data\IGUI\Cf
     true,
     true,
     "",
-    "!(missionNameSpace getVariable ['lockedDAGR', true]) && (player getVariable ['instructor',false])", // _target, _this, _originalTarget
+    "!(missionNameSpace getVariable ['lockedDAGR', false]) && (player getVariable ['instructor',false])", // _target, _this, _originalTarget
     5,
     false,
     "",
