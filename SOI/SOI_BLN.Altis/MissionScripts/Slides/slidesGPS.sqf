@@ -1,21 +1,22 @@
 
 params ["_bb"];
 
-billboards_1 =[
-	bbGPS,
-	ctrlGPS
-];
+if (!isNil "bbGPS") then {
+	bbGPS = bbGPS + [_bb]
+} else {
+	bbGPS = [_bb]
+};
 
 _bb addAction ["  <t color='#00ff00'><img size='1' image='\a3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca'/>Open Slide Controls</t>", {
 		params ["_target", "_caller", "_actionId", "_arguments"];
-		_caller setVariable ["showControlsGPS", true];
+		_caller setVariable ["showControls_" + "bbGPS", true];
 	},
 	nil,		// arguments
 	1.5,		// priority
 	true,		// showWindow
 	false,		// hideOnUse
 	"",			// shortcut
-	"!(player getVariable ['showControlsGPS',false]) && (player getVariable ['instructor',false])", 	// condition
+	"!(player getVariable ['showControls_' + 'bbGPS',false]) && (player getVariable ['instructor',false])", 	// condition
 	10,			// radius
 	false,		// unconscious
 	"",			// selection
@@ -24,14 +25,14 @@ _bb addAction ["  <t color='#00ff00'><img size='1' image='\a3\ui_f\data\igui\cfg
 
 _bb addAction ["  <t color='#ff0000'><img size='1' image='\a3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca'/>Close Slide Controls</t>", {
 		params ["_target", "_caller", "_actionId", "_arguments"];
-		_caller setVariable ["showControlsGPS", false];
+		_caller setVariable ["showControls_" + "bbGPS", false];
 	},
 	nil,		// arguments
 	1.5,		// priority
 	true,		// showWindow
 	false,		// hideOnUse
 	"",			// shortcut
-	"(player getVariable ['showControlsGPS',false]) && (player getVariable ['instructor',false])", 	// condition
+	"(player getVariable ['showControls_' + 'bbGPS',false]) && (player getVariable ['instructor',false])", 	// condition
 	10,			// radius
 	false,		// unconscious
 	"",			// selection
@@ -40,126 +41,78 @@ _bb addAction ["  <t color='#ff0000'><img size='1' image='\a3\ui_f\data\igui\cfg
 
 _bb addAction ["    Intro", {
 		params ["_target", "_caller", "_actionId", "_arguments"];
-		{_x setObjectTextureGlobal [0, "Data\MissionLogo.paa"]} forEach billboards_1;
+		{_x setObjectTextureGlobal [0, "Data\MissionLogo.paa"]} forEach bbGPS;
 	},
 	nil,		// arguments
 	1.5,		// priority
 	true,		// showWindow
 	false,		// hideOnUse
 	"",			// shortcut
-	"(player getVariable ['showControlsGPS',false]) && (player getVariable ['instructor',false])", 	// condition
+	"(player getVariable ['showControls_' + 'bbGPS',false]) && (player getVariable ['instructor',false])", 	// condition
 	10,			// radius
 	false,		// unconscious
 	"",			// selection
 	""			// memoryPoint
 ];
 
-_bb addAction ["    Direct Speech", {
+_bb addAction ["    DAGR Home/WP List", {
 		params ["_target", "_caller", "_actionId", "_arguments"];
-		{_x setObjectTextureGlobal [0, "Data\DirectSpeech.paa"]} forEach billboards_1;
+		{_x setObjectTextureGlobal [0, "Data\GPS\DAGRMain.paa"]} forEach bbGPS;
 	},
 	nil,		// arguments
 	1.5,		// priority
 	true,		// showWindow
 	false,		// hideOnUse
 	"",			// shortcut
-	"(player getVariable ['showControlsGPS',false]) && (player getVariable ['instructor',false])", 	// condition
+	"(player getVariable ['showControls_' + 'bbGPS',false]) && (player getVariable ['instructor',false])", 	// condition
 	10,			// radius
 	false,		// unconscious
 	"",			// selection
 	""			// memoryPoint
 ];
 
-_bb addAction ["    ACRE Settings", {
+_bb addAction ["    DAGR Add WP/Go to WP", {
 		params ["_target", "_caller", "_actionId", "_arguments"];
-		{_x setObjectTextureGlobal [0, "Data\Settings.paa"]} forEach billboards_1;
+		{_x setObjectTextureGlobal [0, "Data\GPS\DAGRGoToWP.paa"]} forEach bbGPS;
 	},
 	nil,		// arguments
 	1.5,		// priority
 	true,		// showWindow
 	false,		// hideOnUse
 	"",			// shortcut
-	"(player getVariable ['showControlsGPS',false]) && (player getVariable ['instructor',false])", 	// condition
+	"(player getVariable ['showControls_' + 'bbGPS',false]) && (player getVariable ['instructor',false])", 	// condition
 	10,			// radius
 	false,		// unconscious
 	"",			// selection
 	""			// memoryPoint
 ];
 
-_bb addAction ["    Radio Settings", {
+_bb addAction ["    MicroDAGR Home/Menu", {
 		params ["_target", "_caller", "_actionId", "_arguments"];
-		{_x setObjectTextureGlobal [0, "Data\RadioSettings.paa"]} forEach billboards_1;
+		{_x setObjectTextureGlobal [0, "Data\GPS\MicroMain.paa"]} forEach bbGPS;
 	},
 	nil,		// arguments
 	1.5,		// priority
 	true,		// showWindow
 	false,		// hideOnUse
 	"",			// shortcut
-	"(player getVariable ['showControlsGPS',false]) && (player getVariable ['instructor',false])", 	// condition
+	"(player getVariable ['showControls_' + 'bbGPS',false]) && (player getVariable ['instructor',false])", 	// condition
 	10,			// radius
 	false,		// unconscious
 	"",			// selection
 	""			// memoryPoint
 ];
 
-_bb addAction ["    AN/PRC-343", {
+_bb addAction ["    MicroDAGR Map/Compass", {
 		params ["_target", "_caller", "_actionId", "_arguments"];
-		{_x setObjectTextureGlobal [0, "Data\343.paa"]} forEach billboards_1;
+		{_x setObjectTextureGlobal [0, "Data\GPS\MicroMap.paa"]} forEach bbGPS;
 	},
 	nil,		// arguments
 	1.5,		// priority
 	true,		// showWindow
 	false,		// hideOnUse
 	"",			// shortcut
-	"(player getVariable ['showControlsGPS',false]) && (player getVariable ['instructor',false])", 	// condition
-	10,			// radius
-	false,		// unconscious
-	"",			// selection
-	""			// memoryPoint
-];
-
-_bb addAction ["    AN/PRC-152", {
-		params ["_target", "_caller", "_actionId", "_arguments"];
-		{_x setObjectTextureGlobal [0, "Data\152.paa"]} forEach billboards_1;
-	},
-	nil,		// arguments
-	1.5,		// priority
-	true,		// showWindow
-	false,		// hideOnUse
-	"",			// shortcut
-	"(player getVariable ['showControlsGPS',false]) && (player getVariable ['instructor',false])", 	// condition
-	10,			// radius
-	false,		// unconscious
-	"",			// selection
-	""			// memoryPoint
-];
-
-_bb addAction ["    AN/PRC-117F", {
-		params ["_target", "_caller", "_actionId", "_arguments"];
-		{_x setObjectTextureGlobal [0, "Data\117F.paa"]} forEach billboards_1;
-	},
-	nil,		// arguments
-	1.5,		// priority
-	true,		// showWindow
-	false,		// hideOnUse
-	"",			// shortcut
-	"(player getVariable ['showControlsGPS',false]) && (player getVariable ['instructor',false])", 	// condition
-	10,			// radius
-	false,		// unconscious
-	"",			// selection
-	""			// memoryPoint
-];
-
-_bb addAction ["    Prowords", {
-		params ["_target", "_caller", "_actionId", "_arguments"];
-		{_x setObjectTextureGlobal [0, "Data\Prowords.paa"]} forEach billboards_1;
-	},
-	nil,		// arguments
-	1.5,		// priority
-	true,		// showWindow
-	false,		// hideOnUse
-	"",			// shortcut
-	"(player getVariable ['showControlsGPS',false]) && (player getVariable ['instructor',false])", 	// condition
+	"(player getVariable ['showControls_' + 'bbGPS',false]) && (player getVariable ['instructor',false])", 	// condition
 	10,			// radius
 	false,		// unconscious
 	"",			// selection

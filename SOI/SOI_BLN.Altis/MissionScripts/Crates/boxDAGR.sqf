@@ -1,7 +1,17 @@
 
-if (!isServer)  exitwith {};
-
 params ["_box"];
+
+_box addEventHandler ["ContainerOpened", {
+        if ((missionNameSpace getVariable ["lockedDAGR", false])) then {
+            [] spawn {
+                waitUntil{!isNull findDisplay 602};
+                closeDialog 1;
+            };
+        
+        };
+}];
+
+if (!isServer)  exitwith {};
 
 clearWeaponCargoGlobal _box;
 clearMagazineCargoGlobal _box;
@@ -19,23 +29,10 @@ private _inventory = [
 
 _box execVM "MissionScripts\Crates\boxes.sqf";
 
-_box addEventHandler ["ContainerOpened", {
-        [] spawn {
-            waitUntil{!isNull findDisplay 602};
-            closeDialog 1;
-        };
-}];
-
 [missionNameSpace, ["lockedDAGR", true]] remoteExec ["setvariable", 0, true];
 
 _box addAction ["  <t color='#ff0000'><img size='1' image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\getout_ca'/>Lock Crate</t>", {
         params ["_target", "_caller", "_actionId", "_arguments"];
-        _target addEventHandler ["ContainerOpened", {
-            [] spawn {
-                waitUntil{ !isNull findDisplay 602 };
-                closeDialog 1;
-            };
-        }];
         [missionNameSpace, ["lockedDAGR", true]] remoteExec ["setvariable", 0, true];
     },
     nil,
@@ -52,7 +49,6 @@ _box addAction ["  <t color='#ff0000'><img size='1' image='\a3\ui_f\data\IGUI\Cf
 
 _box addAction ["  <t color='#00ff00'><img size='1' image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\getin_ca'/>Unlock Crate</t>", {
         params ["_target", "_caller", "_actionId", "_arguments"];
-        _target removeAllEventHandlers "ContainerOpened";
         [missionNameSpace, ["lockedDAGR", false]] remoteExec ["setvariable", 0, true];
     },
     nil,
