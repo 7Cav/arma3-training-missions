@@ -16,6 +16,8 @@
  */
 
 waitUntil {!isNull player && player == player};
+waitUntil {profileName != ""};
+
 if (!isNil{player getVariable QEGVAR(player,documents)}) exitWith {[formatText["Diary Records already applied for %1.", player]] call FUNC(logWarning);};
 
 #ifdef DEBUG_MODE
@@ -29,6 +31,7 @@ if !(player diarySubjectExists "7Cav") then {
 
     // Load diary records (NOTE! The load order is reversed. So the top will be at the bottom after load.)
     call FUNC(Doc_MissionControl);
+    call FUNC(Doc_Radio);
     call FUNC(Doc_Info);
 
     // debug
