@@ -20,5 +20,3 @@ private _inventory = [
     _x params ["_ammo", "_amount"];
     _box addItemCargoGlobal [_ammo, _amount];
 } forEach _inventory;
-
-_box execVM "MissionScripts\Crates\boxes.sqf";
