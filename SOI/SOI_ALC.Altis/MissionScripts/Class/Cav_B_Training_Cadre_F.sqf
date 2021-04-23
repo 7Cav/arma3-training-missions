@@ -4,7 +4,6 @@ private _state = param [0, "", [""]];
 if (_state == "init") then {
 
     player setVariable ["instructor", true];
-    player setVariable ["showControls", false];
 
     player addEventHandler ["Fired",{(_this select 0) setVehicleAmmo 1}];
 
@@ -36,7 +35,7 @@ if (_state == "init") then {
         true,       // showWindow
         false,      // hideOnUse
         "",         // shortcut
-        "!(missionNameSpace getVariable ['aiFreeze',true])" 	// condition
+        "!(missionNameSpace getVariable ['aiFreeze',false])" 	// condition
     ];
 
     player addAction ["  <img size='1' image='\a3\ui_f\data\IGUI\Cfg\CommandBar\combatMode_textureMCombat_ca'/> <t color='#ff0000'>Unfreeze OpFor</t>", {
