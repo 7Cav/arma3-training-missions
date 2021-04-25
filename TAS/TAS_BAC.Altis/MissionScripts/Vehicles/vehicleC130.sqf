@@ -5,6 +5,8 @@ if !(isServer) exitWith {};
 
 sleep 1;
 
+_vehicle allowDamage false;
+
 [_vehicle, 100] call ace_cargo_fnc_setSpace; //Sets cargo space
 [_vehicle, -1] call ace_cargo_fnc_setSize; //Sets cargo size
 
