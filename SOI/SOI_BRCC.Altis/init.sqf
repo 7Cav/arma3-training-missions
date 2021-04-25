@@ -27,5 +27,3 @@ ACE_maxWeightDrag = 10000;
 #endif
 
 /* APPLY STUFF ONLY BELOW THIS LINE */
-
-[missionNameSpace, ["aiFreeze", false]] remoteExec ["setvariable", 0, true];
