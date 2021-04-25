@@ -7,7 +7,7 @@ if (!isNil "bbRadio") then {
 	bbRadio = [_bb]
 };
 
-_bb addAction ["<t color='#00ff00'>Open Slide Controls</t>", {
+_bb addAction ["<t color='#00ff00'><img size='1' image='\a3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca.paa'/>Open Slide Controls</t>", {
 		params ["_target", "_caller", "_actionId", "_arguments"];
 		_caller setVariable ["showControls_" + "bbRadio", true];
 	},
@@ -23,7 +23,7 @@ _bb addAction ["<t color='#00ff00'>Open Slide Controls</t>", {
 	""			// memoryPoint
 ];
 
-_bb addAction ["<t color='#ff0000'>Close Slide Controls</t>", {
+_bb addAction ["<t color='#ff0000'><img size='1' image='\a3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca.paa'/>Close Slide Controls</t>", {
 		params ["_target", "_caller", "_actionId", "_arguments"];
 		_caller setVariable ["showControls_" + "bbRadio", false];
 	},
