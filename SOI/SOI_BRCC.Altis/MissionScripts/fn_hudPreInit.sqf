@@ -25,6 +25,7 @@ HUD_Names =
 	["Plane", ["\a3\ui_f\data\igui\cfg\simpleTasks\types\plane_ca.paa", 32]],
 	["Truck", ["\a3\ui_f\data\igui\cfg\simpleTasks\types\truck_ca.paa", 32]],
 	["Whiteboard", ["\a3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca.paa", 32]],
+	["Info", ["\a3\ui_f\data\GUI\RscCommon\RscDebugConsole\biki_ca", 32]],
 	["Engine", ["\a3\ui_f\data\igui\cfg\vehicleToggles\EngineIconOn_ca.paa", 32]],
 	["Revive", ["\a3\ui_f\data\igui\cfg\revive\overlayIcons\u100_ca.paa", 32]],
 	["Air", ["\a3\ui_f\data\igui\cfg\MPTable\air_ca.paa", 32]],
