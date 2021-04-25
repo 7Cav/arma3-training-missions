@@ -424,9 +424,6 @@ force force acex_field_rations_timeWithoutFood = 504;
 force force acex_field_rations_timeWithoutWater = 168;
 force force acex_field_rations_waterSourceActions = 2;
 
-// ACEX Fortify
-force force acex_fortify_settingHint = 1;
-
 // ACEX Headless
 force force acex_headless_delay = 15;
 force force acex_headless_enabled = false;
@@ -458,12 +455,12 @@ force force acre_sys_core_automaticAntennaDirection = false;
 //acre_sys_core_defaultRadioVolume = 0.8;
 force force acre_sys_core_fullDuplex = false;
 force force acre_sys_core_ignoreAntennaDirection = false;
-force force acre_sys_core_interference = true;
+force force acre_sys_core_interference = false;
 //acre_sys_core_postmixGlobalVolume = 3;
 //acre_sys_core_premixGlobalVolume = 3;
 force force acre_sys_core_revealToAI = 1;
 //acre_sys_core_spectatorVolume = 1;
-force force acre_sys_core_terrainLoss = 0.3;
+force force acre_sys_core_terrainLoss = 0;
 force force acre_sys_core_ts3ChannelName = "";
 force force acre_sys_core_ts3ChannelPassword = "";
 force force acre_sys_core_ts3ChannelSwitch = false;
