@@ -17,7 +17,7 @@ if (_state == "init") then {
 
     sleep 2;
 
-    player execVM "MissionScripts\Utility\intoInstructor.sqf";
+    player execVM "MissionScripts\Utility\introInstructor.sqf";
 
 };
 
