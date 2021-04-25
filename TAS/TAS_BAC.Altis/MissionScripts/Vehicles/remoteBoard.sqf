@@ -5,5 +5,5 @@ params ["_vehicle", "_dest"];
     params ["_vehicle", "_role", "_unit"];
     moveOut _unit;
     sleep 0.1;
-    _unit moveInCargo _thisArgs;
+    [_unit, _thisArgs] remoteExec ["moveInCargo", 0];
 }, _dest] call CBA_fnc_addBISEventHandler;
