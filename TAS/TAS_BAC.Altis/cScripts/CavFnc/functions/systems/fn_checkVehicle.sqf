@@ -15,16 +15,10 @@ params ["_vehicle"];
 
 private _hasJump    = _vehicle getVariable [QEGVAR(Vehicle,Jump),[]];
 private _hasHalo    = _vehicle getVariable [QEGVAR(Vehicle,Halo),[]];
-private _hasFortify = _vehicle getVariable [QEGVAR(Vehicle,Fortify),[]];
-
-
- private _condition = {
-    player == vehicle player
-};
 
 private _statement = {
     params ["_target", "_player", "_args"];
-    _args params ["_hasJump", "_hasHalo", "_hasFortify"];
+    _args params ["_hasJump", "_hasHalo"];
 
     if !(count _hasJump == 0) then {
         [
@@ -53,27 +47,9 @@ private _statement = {
             [""]
         ] call CBA_fnc_notify;
     };
-    if !(count _hasFortify == 0) then {
-        private _restriction = switch (EGVAR(Settings,setFortifyRestriction)) do {
-            case (0): {"<t color='#ffc61a'>Anyone</t>"};
-            case (1): {"<t color='#ffc61a'>Engineers</t>"};
-            case (2): {"<t color='#ffc61a'>Advanced Engineers</t>"};
-        };
-        [
-            [],
-            ["Fortify", 1.2, [0, 1, 0, 1]],
-            ["This aircraft is equipped with"],
-            ["fortify equipment and gear."],
-            [""],
-            [format ["Neede role: <t color='#ffc61a'>%1</t>", _restriction]],
-            [format ["Radius: <t color='#ffc61a'>%1</t>", _hasFortify select 1]],
-            [""],
-            [""]
-        ] call CBA_fnc_notify;
-    };
 };
 
 private _checkLabel = if (_vehicle isKindOf "Air") then {"Check Aircraft"} else {"Check Vehicle"};
 
-_action = [QEGVAR(Action,Check), _checkLabel, "", _statement, {true}, {}, [_hasJump, _hasHalo, _hasFortify]] call ace_interact_menu_fnc_createAction;
+_action = [QEGVAR(Action,Check), _checkLabel, "", _statement, {true}, {}, [_hasJump, _hasHalo]] call ace_interact_menu_fnc_createAction;
 [_vehicle, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
