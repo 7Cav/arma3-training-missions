@@ -15,7 +15,6 @@ class cScripts {
 
         class initTagging {};
 
-        class initFortify {};
         class initItemReplace {};
         
         class initCuratorObjectPlaced {};
@@ -62,8 +61,6 @@ class cScripts {
 
         class setTeamColor {};
 
-        class doPlayerAnnouncement {};
-
         class getRadioChannel {};
         class setRadioChannel {};
         class setActiveRadio {};
@@ -78,10 +75,11 @@ class cScripts {
         file = "cScripts\cavFnc\functions\mission";
         class gate {};
         class teleport {};
+        class addLoadoutAction {};
 
         class addGetOutHelo {};
 
-        class addJump {};
+        class addLineJump {};
         class addHaloJump {};
 
         class setVehicleLable {};
@@ -104,9 +102,10 @@ class cScripts {
         class deleteDroppedObjects {};
 
        // Plane jump
-        class doJump {};
-        class doHaloJump {};
-        class handleJump {};
+        class para_lineJump {};
+        class para_haloJump {};
+        class para_equipment {};
+        class para_backpack {};
 
         // Buttons and options
         class addReGear {};
@@ -114,15 +113,12 @@ class cScripts {
         class addArsenal {};
         class addAceCategory {}; // depricated => createActionCategory
         class createActionCategory {};
-        class addLoadoutAction {};
 
         class doGetOutHeloSide {};
 
         class addObjectToCurator {};
 
         class getChannelName {};
-
-        class addFortifyArea {};
 
         class createVehicleLable {};
         class getVehicleLable {};

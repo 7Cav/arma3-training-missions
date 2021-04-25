@@ -1,7 +1,7 @@
 
 params ["_box"];
 
-_box addAction ["  Instructor", {
+_box addAction ["  <t color='#FFD700'><img size='1' image='\a3\ui_f\data\Map\VehicleIcons\iconManCommander_ca'/></t>Instructor", {
     params ["","_player"];
 
     _player setUnitLoadout [
@@ -22,6 +22,39 @@ _box addAction ["  Instructor", {
         "rhsusf_patrolcap_ocp","",[],
         ["ItemMap","ItemAndroid","","ItemCompass","ItemWatch",""]
     ]
+},
+nil,
+1.5,
+false,
+false,
+"",
+"(player getVariable ['instructor', false])",
+5];
+
+_box addAction ["  <t color='#FFD700'><img size='1' image='\a3\ui_f\data\Map\VehicleIcons\iconManOfficer_ca'/></t>Squad Leader", {
+    params ["","_player"];
+
+    _player setUnitLoadout [
+        ["rhs_weap_m4a1","rhsusf_acc_SFMB556","rhsusf_acc_anpeq15_top","rhsusf_acc_acog_rmr",[],[],"rhsusf_acc_tdstubby_tan"],
+        [],
+        [],
+        ["rhs_uniform_acu_oefcp",[
+            ["ACE_quikclot",14],
+            ["ACE_tourniquet",4],
+            ["ACE_Flashlight_XL50",1],
+            ["ACE_MapTools",1],
+            ["ACRE_PRC343",1],
+            ["ACRE_PRC152",1],
+            ["ACE_microDAGR",1]]
+        ],
+        ["rhsusf_spcs_ocp_rifleman_alt",[]],
+        ["B_AssaultPack_mcamo",[
+            ["ACRE_PRC117F",1],
+            ["ACE_personalAidKit",1],
+            ["rhsusf_ANPVS_14",1],
+            ["ACE_EntrenchingTool",1]]
+        ],"rhsusf_ach_helmet_ocp","rhs_facewear_6m2_1",[],
+        ["ItemMap","","","ItemCompass","ItemWatch",""]]
 },
 nil,
 1.5,
@@ -162,6 +195,6 @@ false,
 "",
 5];
 
-_box execVM "MissionScripts\Crates\inventory.sqf";
+_box execVM "MissionScripts\Crates\Inventory\inventoryRadios.sqf";
 
 _box execVM "MissionScripts\Crates\boxes.sqf";

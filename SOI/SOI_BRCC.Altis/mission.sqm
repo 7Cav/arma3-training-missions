@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.78539819;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=521;
+	toggles=525;
 	class ItemIDProvider
 	{
-		nextID=1;
+		nextID=10;
 	};
 	class MarkerIDProvider
 	{
-		nextID=1;
+		nextID=5;
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=61;
 	};
 	class Camera
 	{
-		pos[]={17440.58,24.032791,13131.307};
-		dir[]={-0.65817797,-0.45192263,0.60217607};
-		up[]={-0.33343333,0.89204949,0.30506429};
-		aside[]={0.67503864,-8.9057721e-008,0.73781252};
+		pos[]={17416.396,46.412716,13234.521};
+		dir[]={-0.056698028,-0.43930346,-0.89654779};
+		up[]={-0.027726334,0.89833868,-0.43842766};
+		aside[]={-0.99800634,0,0.063114308};
 	};
 };
 binarizationWanted=0;
@@ -1363,7 +1363,7 @@ class Mission
 					class Attributes
 					{
 						condition="call{this}";
-						onActivation="call{{_x execVM ""MissionScripts\Crates\inventory.sqf"";} forEach [radioCar_1,radioCar_2,radioCar_3,radioCar_4]}";
+						onActivation="call{{_x execVM ""MissionScripts\Crates\Inventory\inventoryRadios.sqf"";} forEach [radioCar_1,radioCar_2,radioCar_3,radioCar_4]}";
 						sizeA=16.093;
 						sizeB=9.941;
 						repeatable=1;
@@ -4074,41 +4074,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17477.039,33.995392,13064.315};
-						angles[]={0,3.1692197,0};
+						position[]={17477.039,33.995682,13064.315};
+						angles[]={0,3.1692212,0};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""Return to Assembly Area"", radio_0] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 1"", radio_1] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 2"", radio_2] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 3"", radio_3] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 4"", radio_4] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 5"", radio_5] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 6"", radio_6] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 7"", radio_7] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 8"", radio_8] call cScripts_fnc_teleport;}";
+						init="call{" \n "this setObjectTextureGlobal [0, ""z\cav\addons\flag\data\flag_00_ca.paa""];" \n "" \n "[this,""Return to Assembly Area"", radio_0] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 1"", radio_1] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 2"", radio_2] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 3"", radio_3] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 4"", radio_4] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 5"", radio_5] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 6"", radio_6] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 7"", radio_7] call cScripts_fnc_teleport;" \n "[this,""Teleport to Lane 8"", radio_8] call cScripts_fnc_teleport;}";
 						name="radio_tower";
 					};
 					id=2134;
 					type="Land_InfoStand_V1_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="z\cav\addons\flag\data\flag_00_ca.paa";
-								};
-							};
-						};
-						nAttributes=1;
-					};
+					atlOffset=0.00028991699;
 				};
 				class Item6
 				{
@@ -4122,7 +4100,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Radios.sqf"";" \n "}";
+						init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Selection\selectionRadios.sqf"";" \n "}";
 					};
 					id=2084;
 					type="B_supplyCrate_F";
@@ -4139,7 +4117,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Radios.sqf"";" \n "}";
+						init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Selection\selectionRadios.sqf"";" \n "}";
 					};
 					id=2133;
 					type="B_supplyCrate_F";
@@ -4184,7 +4162,7 @@ class Mission
 					position[]={17415,14.479,13131};
 					name="HUD_A0_Infantry_Whiteboard_7_50";
 					type="Empty";
-					colorName="ColorWEST";
+					colorName="ColorWhite";
 					alpha=0.5;
 					id=2162;
 					atlOffset=-0.16100025;
@@ -4606,7 +4584,7 @@ class Mission
 				{
 					dataType="Marker";
 					position[]={17421.385,14.64,13129.223};
-					name="HUD_A0_Infantry_Message_5_10";
+					name="HUD_A0_Infantry_Info_5_10";
 					type="Empty";
 					colorName="ColorWhite";
 					alpha=0.5;
@@ -4624,7 +4602,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{" \n "this setObjectTextureGlobal [0, ""Data\TrainingArea.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\LaneAnswers.sqf"";" \n "}";
+						init="call{" \n "this setObjectTextureGlobal [0, ""Data\TrainingArea.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\slidesAnswers.sqf"";" \n "}";
 						name="answer_1";
 					};
 					id=2373;
@@ -4650,7 +4628,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\Slides.sqf"";" \n "}";
+								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\slidesRadios.sqf"";" \n "}";
 								disableSimulation=1;
 							};
 							id=1949;
@@ -4669,7 +4647,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Radios.sqf"";" \n "}";
+								init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Selection\selectionRadios.sqf"";" \n "}";
 							};
 							id=2110;
 							type="ACRE_RadioSupplyCrate";
@@ -4687,7 +4665,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\Slides.sqf"";" \n "}";
+								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\slidesRadios.sqf"";" \n "}";
 								disableSimulation=1;
 							};
 							id=1881;
@@ -4706,7 +4684,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\Slides.sqf"";" \n "}";
+								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "" \n "this execVM ""MissionScripts\Slides\slidesRadios.sqf"";" \n "}";
 								disableSimulation=1;
 							};
 							id=1884;
@@ -4742,7 +4720,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="call{" \n "this execVM ""MissionScripts\resources.sqf"";" \n "}";
+								init="call{" \n "this execVM ""MissionScripts\Utility\resourcesStudent.sqf"";" \n "}";
 							};
 							id=1823;
 							type="Land_Printer_01_F";
@@ -4951,7 +4929,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Radios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_1.sqf"";" \n "}";
+						init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Selection\selectionRadios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_1.sqf"";" \n "}";
 					};
 					id=2151;
 					type="B_supplyCrate_F";
@@ -4969,7 +4947,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Radios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_2.sqf"";" \n "}";
+						init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Selection\selectionRadios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_2.sqf"";" \n "}";
 					};
 					id=2152;
 					type="B_supplyCrate_F";
@@ -4986,7 +4964,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Radios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_3.sqf"";" \n "" \n "}";
+						init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Selection\selectionRadios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_3.sqf"";" \n "" \n "}";
 					};
 					id=2153;
 					type="B_supplyCrate_F";
@@ -5003,7 +4981,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Radios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_4.sqf"";" \n "}";
+						init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Selection\selectionRadios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_4.sqf"";" \n "}";
 					};
 					id=2154;
 					type="B_supplyCrate_F";
@@ -5021,7 +4999,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Radios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_5.sqf"";" \n "}";
+						init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Selection\selectionRadios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_5.sqf"";" \n "}";
 					};
 					id=2155;
 					type="B_supplyCrate_F";
@@ -5039,7 +5017,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Radios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_6.sqf"";" \n "}";
+						init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Selection\selectionRadios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_6.sqf"";" \n "}";
 					};
 					id=2156;
 					type="B_supplyCrate_F";
@@ -5049,18 +5027,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={18488.078,77.597054,10953.981};
+						position[]={18488.078,77.598053,10953.981};
 						angles[]={0,4.7996554,0};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Radios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_7.sqf"";}";
+						init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Selection\selectionRadios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_7.sqf"";}";
 					};
 					id=2157;
 					type="B_supplyCrate_F";
-					atlOffset=-0.00099945068;
 				};
 				class Item15
 				{
@@ -5074,7 +5051,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Radios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_8.sqf"";}";
+						init="call{" \n "[this,""none"",true,true,false,true] call cScripts_fnc_doStarterCrate;" \n "" \n "this execVM ""MissionScripts\Crates\Selection\selectionRadios.sqf"";" \n "" \n "this execVM ""MissionScripts\Lanes\Lane_8.sqf"";}";
 					};
 					id=2158;
 					type="B_supplyCrate_F";
@@ -7459,7 +7436,7 @@ class Mission
 				};
 			};
 			id=2159;
-			atlOffset=35.200943;
+			atlOffset=35.200974;
 		};
 	};
 	class Connections
