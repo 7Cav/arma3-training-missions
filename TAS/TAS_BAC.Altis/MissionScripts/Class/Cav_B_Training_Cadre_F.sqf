@@ -93,32 +93,6 @@ if (_state == "init") then {
         "(6 < dayTime) && (18 > dayTime)" 	// condition
     ];
 
-    /*player addAction ["<img size='1' image='\a3\ui_f\data\GUI\Rsc\RscDisplayArcadeMap\clear_ca'/> Set Time: Day",	{
-		    params ["_target", "_caller", "_actionId", "_arguments"]; // script  
-            _timeToSkipTo = 0;
-            skipTime (_timeToSkipTo - daytime + 24 ) % 24;
-	        },
-	    nil,		// arguments
-	    1.5,		// priority
-	    true,		// showWindow
-	    true,		// hideOnUse
-	    "",			// shortcut
-	    "(6 < dayTime) && (daytime > 18)", 	// condition
-    ];
-
-    player addAction ["<img size='1' image='\a3\ui_f\data\GUI\Rsc\RscDisplayArcadeMap\overcast_ca'/> Set Time: Night",	{
-    		params ["_target", "_caller", "_actionId", "_arguments"]; // script
-            _timeToSkipTo = 0;
-            skipTime (_timeToSkipTo - daytime + 24 ) % 24;
-	        },
-	    nil,		// arguments
-	    1.5,		// priority
-	    true,		// showWindow
-	    true,		// hideOnUse
-	    "",			// shortcut
-	    "(6 > dayTime) && (daytime < 18)", 	// condition
-    ];*/
-
     player addAction ["  <img size='1' image='\a3\ui_f\data\IGUI\RscIngameUI\RscDisplayChannel\MuteChat_ca'/> Class Resources", {
             params ["_target", "_caller", "_actionId", "_arguments"];
             _lp = parseText "<a href='https://drive.google.com/file/d/1i7KDtjOW1lBwrEr-OZ-Rscf3PVQy8G_O/view?usp=sharing'><t color='#ebc729' size='1.2'>Lesson&#160;Plan</t></a><br />";
