@@ -36,6 +36,7 @@ class tScripts {
 	class cargo {
 		file = "tScripts\Crates\Cargo";
 		class loadAmmoBox {};
+		class loadMedicalBox {};
 		class setCargo {};
 	};
 

@@ -53,7 +53,7 @@ _box addAction ["  " + _color + _img + "</t>" + _role, {
 				["ACE_surgicalKit",1],
 				["ACE_personalAidKit",1]
 			]],
-			"rhsusf_ach_helmet_camo_ocp","",[],
+			"rhsusf_ach_helmet_ocp","",[],
 			["ItemMap","","","ItemCompass","ACE_Altimeter",""]
 		];
 

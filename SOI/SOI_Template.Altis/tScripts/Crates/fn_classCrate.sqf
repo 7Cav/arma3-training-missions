@@ -3,7 +3,7 @@
 
 params ["_box"];
 
-[_box, true] call ace_arsenal_fnc_initBox;
+//[_box, true] call ace_arsenal_fnc_initBox;
 
 [_box,"none",true,true,false,true] call cScripts_fnc_doStarterCrate;
 
