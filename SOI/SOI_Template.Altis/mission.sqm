@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=11;
+		nextID=12;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17444.725,36.502197,13186.725};
-		dir[]={-0.62821645,-0.46195206,-0.6260547};
-		up[]={-0.32721198,0.8869049,-0.32608598};
-		aside[]={-0.70588708,-1.4901161e-008,0.70832449};
+		pos[]={17439.029,44.310951,13205.822};
+		dir[]={-0.58291757,-0.50211734,-0.63899767};
+		up[]={-0.33840549,0.86478901,-0.37096331};
+		aside[]={-0.7388621,8.076895e-007,0.67401654};
 	};
 };
 binarizationWanted=0;
@@ -66,14 +66,13 @@ addons[]=
 	"A3_Ui_F",
 	"cav_troops_training",
 	"A3_Structures_F_Civ_InfoBoards",
-	"A3_Signs_F_Signs_Ad",
-	"A3_Characters_F_AoW"
+	"A3_Signs_F_Signs_Ad"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=21;
+		items=20;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -211,13 +210,6 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item20
-		{
-			className="A3_Characters_F_AoW";
-			name="Arma 3 Art of War - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
 	};
 };
 dlcs[]=
@@ -282,7 +274,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=6;
+		items=5;
 		class Item0
 		{
 			dataType="Layer";
@@ -3675,7 +3667,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "}";
 							};
 							id=1949;
 							type="Land_Billboard_F";
@@ -3864,36 +3855,6 @@ class Mission
 			title="Add MRAPs";
 			id=199;
 			atlOffset=0.00038528442;
-		};
-		class Item5
-		{
-			dataType="Group";
-			side="Civilian";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17453.996,15.51021,13073.356};
-					};
-					side="Civilian";
-					flags=7;
-					class Attributes
-					{
-					};
-					id=8;
-					type="C_Man_smart_casual_2_F";
-					atlOffset=3.8146973e-006;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=7;
-			atlOffset=3.8146973e-006;
 		};
 	};
 	class Connections
