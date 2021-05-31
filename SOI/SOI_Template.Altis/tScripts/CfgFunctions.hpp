@@ -63,6 +63,7 @@ class tScripts {
 		file = "tScripts\Vehicles";
 		class vehicleInit {};
 		class spaceSize {};
+		class remoteBoard {};
 		class liftVehicle {};
 	};
 
