@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=5;
+		nextID=9;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=31;
+		nextID=55;
 	};
 	class Camera
 	{
-		pos[]={17442.826,39.821312,13180.705};
-		dir[]={-0.64455587,-0.52506399,-0.55574775};
-		up[]={-0.39765939,0.85106272,-0.3428691};
-		aside[]={-0.65300441,-2.9802322e-008,0.75735408};
+		pos[]={17434.68,35.186882,13193.427};
+		dir[]={-0.62829161,-0.46200731,-0.62612957};
+		up[]={-0.32725596,0.88688332,-0.32613057};
+		aside[]={-0.70595741,5.189795e-007,0.70840126};
 	};
 };
 binarizationWanted=0;
@@ -66,13 +66,14 @@ addons[]=
 	"A3_Ui_F",
 	"cav_troops_training",
 	"A3_Structures_F_Civ_InfoBoards",
-	"A3_Signs_F_Signs_Ad"
+	"A3_Signs_F_Signs_Ad",
+	"A3_Characters_F_AoW"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=20;
+		items=21;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -210,6 +211,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item20
+		{
+			className="A3_Characters_F_AoW";
+			name="Arma 3 Art of War - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -274,7 +282,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			dataType="Layer";
@@ -3327,7 +3335,6 @@ class Mission
 				{
 					dataType="Layer";
 					name="BluFor";
-					state=1;
 					class Entities
 					{
 						items=3;
@@ -3487,7 +3494,6 @@ class Mission
 							{
 							};
 							id=2028;
-							atlOffset=185.97;
 						};
 						class Item1
 						{
@@ -3578,12 +3584,12 @@ class Mission
 							{
 							};
 							id=2037;
-							atlOffset=185.97;
+							atlOffset=0.58399963;
 						};
 						class Item2
 						{
 							dataType="Group";
-							side="West";
+							side="Civilian";
 							class Entities
 							{
 								items=2;
@@ -3595,7 +3601,7 @@ class Mission
 										position[]={17439.992,15.600737,13097.518};
 										angles[]={0,5.4992185,6.2824869};
 									};
-									side="West";
+									side="Civilian";
 									flags=2;
 									class Attributes
 									{
@@ -3616,7 +3622,7 @@ class Mission
 										position[]={17440.697,15.600963,13096.809};
 										angles[]={0,5.4992185,6.2824869};
 									};
-									side="West";
+									side="Civilian";
 									flags=4;
 									class Attributes
 									{
@@ -3634,11 +3640,11 @@ class Mission
 							{
 							};
 							id=2042;
-							atlOffset=185.97;
+							atlOffset=0.54399967;
 						};
 					};
 					id=2006;
-					atlOffset=185.97;
+					atlOffset=0.18754768;
 				};
 				class Item8
 				{
@@ -3824,7 +3830,7 @@ class Mission
 				};
 			};
 			id=2007;
-			atlOffset=-1.1227627;
+			atlOffset=0.52252483;
 		};
 		class Item2
 		{
@@ -3858,6 +3864,36 @@ class Mission
 			title="Add MRAPs";
 			id=199;
 			atlOffset=0.00038528442;
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17453.996,15.51021,13073.356};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=8;
+					type="C_Man_smart_casual_2_F";
+					atlOffset=3.8146973e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=7;
+			atlOffset=3.8146973e-006;
 		};
 	};
 	class Connections
