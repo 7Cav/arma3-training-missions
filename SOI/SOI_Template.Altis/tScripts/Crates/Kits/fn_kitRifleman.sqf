@@ -7,7 +7,7 @@ _role = "Rifleman";
 _img = iconMan;
 
 _color = "<t color='#155492'>";
-_cond = "true";
+_cond = "!(_target getVariable ['locked', false])";
 
 if (_rstr == true) then {
 	_color = "<t color='#FFD700'>";
@@ -44,7 +44,7 @@ _box addAction ["  " + _color + _img + "</t>" + _role, {
 			"rhsusf_ach_helmet_ocp","",[],
 			["ItemMap","","","ItemCompass","ItemWatch",""]
 		];
-	
+
 		_player call FUNC(tapes);
 	},
 	nil,

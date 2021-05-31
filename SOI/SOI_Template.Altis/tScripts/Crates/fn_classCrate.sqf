@@ -3,7 +3,7 @@
 
 params ["_box"];
 
-[_box, true] call ace_arsenal_fnc_initBox;
+//[_box, true] call ace_arsenal_fnc_initBox;
 
 [_box,"none",true,true,false,true] call cScripts_fnc_doStarterCrate;
 
@@ -26,6 +26,8 @@ _kits = [
 [_box, false] call ace_dragging_fnc_setCarryable;
 
 _box allowdamage false;
+
+_box call FUNC(crateLock);
 
 if !(isServer) exitWith {};
 

@@ -7,7 +7,7 @@ _role = "Combat Life Saver";
 _img = iconManMedic;
 
 _color = "<t color='#155492'>";
-_cond = "true";
+_cond = "!(_target getVariable ['locked', false])";
 
 if (_rstr == true) then {
 	_color = "<t color='#FFD700'>";

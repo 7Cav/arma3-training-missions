@@ -1,8 +1,6 @@
 
 #include "..\script_component.hpp";
 
-if (isServer) exitWith {};
-
 params ["_printer"];
 
 _printer addAction ["  <img size='1' image='\a3\ui_f\data\GUI\RscCommon\RscDebugConsole\biki_ca'/> Class Resources", {

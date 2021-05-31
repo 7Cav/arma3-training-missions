@@ -23,6 +23,7 @@ class tScripts {
 	class utility {
 		file = "tScripts\Utility";
 		class acePermissions {};
+		class crateLock {};
 		class intro {};
 		class resourcesCadet {};
 		class tapes {};
