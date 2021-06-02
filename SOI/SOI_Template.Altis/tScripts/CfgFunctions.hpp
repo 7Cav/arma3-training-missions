@@ -23,9 +23,11 @@ class tScripts {
 	class utility {
 		file = "tScripts\Utility";
 		class acePermissions {};
+		class crateLock {};
 		class intro {};
 		class resourcesCadet {};
 		class tapes {};
+		class timer {};
 	};
 
 	class crates {
@@ -63,6 +65,7 @@ class tScripts {
 		file = "tScripts\Vehicles";
 		class vehicleInit {};
 		class spaceSize {};
+		class remoteBoard {};
 		class liftVehicle {};
 	};
 

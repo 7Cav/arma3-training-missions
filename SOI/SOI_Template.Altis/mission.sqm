@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=5;
+		nextID=12;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=31;
+		nextID=61;
 	};
 	class Camera
 	{
-		pos[]={17442.826,39.821312,13180.705};
-		dir[]={-0.64455587,-0.52506399,-0.55574775};
-		up[]={-0.39765939,0.85106272,-0.3428691};
-		aside[]={-0.65300441,-2.9802322e-008,0.75735408};
+		pos[]={17439.029,44.310951,13205.822};
+		dir[]={-0.58291757,-0.50211734,-0.63899767};
+		up[]={-0.33840549,0.86478901,-0.37096331};
+		aside[]={-0.7388621,8.076895e-007,0.67401654};
 	};
 };
 binarizationWanted=0;
@@ -3327,7 +3327,6 @@ class Mission
 				{
 					dataType="Layer";
 					name="BluFor";
-					state=1;
 					class Entities
 					{
 						items=3;
@@ -3487,7 +3486,6 @@ class Mission
 							{
 							};
 							id=2028;
-							atlOffset=185.97;
 						};
 						class Item1
 						{
@@ -3578,12 +3576,12 @@ class Mission
 							{
 							};
 							id=2037;
-							atlOffset=185.97;
+							atlOffset=0.58399963;
 						};
 						class Item2
 						{
 							dataType="Group";
-							side="West";
+							side="Civilian";
 							class Entities
 							{
 								items=2;
@@ -3595,7 +3593,7 @@ class Mission
 										position[]={17439.992,15.600737,13097.518};
 										angles[]={0,5.4992185,6.2824869};
 									};
-									side="West";
+									side="Civilian";
 									flags=2;
 									class Attributes
 									{
@@ -3616,7 +3614,7 @@ class Mission
 										position[]={17440.697,15.600963,13096.809};
 										angles[]={0,5.4992185,6.2824869};
 									};
-									side="West";
+									side="Civilian";
 									flags=4;
 									class Attributes
 									{
@@ -3634,11 +3632,11 @@ class Mission
 							{
 							};
 							id=2042;
-							atlOffset=185.97;
+							atlOffset=0.54399967;
 						};
 					};
 					id=2006;
-					atlOffset=185.97;
+					atlOffset=0.18754768;
 				};
 				class Item8
 				{
@@ -3669,7 +3667,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{" \n "this setObjectTextureGlobal [0, ""Data\MissionLogo.paa""];" \n "}";
 							};
 							id=1949;
 							type="Land_Billboard_F";
@@ -3824,7 +3821,7 @@ class Mission
 				};
 			};
 			id=2007;
-			atlOffset=-1.1227627;
+			atlOffset=0.52252483;
 		};
 		class Item2
 		{

@@ -27,6 +27,8 @@ _kits = [
 
 _box allowdamage false;
 
+_box call FUNC(crateLock);
+
 if !(isServer) exitWith {};
 
 [_box, [

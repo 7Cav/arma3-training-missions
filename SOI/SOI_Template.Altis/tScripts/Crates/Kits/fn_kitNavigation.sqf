@@ -7,7 +7,7 @@ _role = "Land Navigation";
 _img = iconMan;
 
 _color = "<t color='#155492'>";
-_cond = "true";
+_cond = "!(_target getVariable ['locked', false])";
 
 if (_rstr == true) then {
 	_color = "<t color='#FFD700'>";
@@ -36,7 +36,7 @@ _box addAction ["  " + _color + _img + "</t>" + _role, {
 				["ACE_personalAidKit",1],
 				["rhsusf_ANPVS_14",1],
 				["ACE_EntrenchingTool",1]]
-			],"rhsusf_ach_helmet_ocp","",[],
+			],"rhsusf_ach_helmet_ocp","",["rhsusf_bino_m24_ARD","","","",[],[],""],
 			["ItemMap","","","ItemCompass","ItemWatch",""]
 		];
 

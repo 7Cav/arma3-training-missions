@@ -38,6 +38,9 @@ if(isServer) then {
 	};
 
 	{_x setObjectTextureGlobal [0, "z\cav\addons\flag\data\flag_00_ca.paa"]} foreach allMissionObjects "Land_InfoStand_V2_F";
+	{_x setObjectTextureGlobal [0, "Data\MissionLogo.paa"]} foreach allMissionObjects "Land_Billboard_F";
+	{_x setObjectTextureGlobal [0, "Data\MissionLogo.paa"]} foreach allMissionObjects "Land_PCSet_01_screen_F";
+	{_x setObjectTextureGlobal [0, "Data\MissionLogo.paa"]} foreach allMissionObjects "Land_Laptop_unfolded_F";
 
 };
 
