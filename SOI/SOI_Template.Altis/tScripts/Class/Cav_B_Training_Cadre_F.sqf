@@ -14,6 +14,7 @@ if (_state == "init") then {
 	[] call FUNC(resourcesCadre);
 
 	[] call FUNC(3DIcons);
+	[] call FUNC(timer);
 
 	sleep 1;
 

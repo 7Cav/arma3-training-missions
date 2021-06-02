@@ -27,6 +27,7 @@ class tScripts {
 		class intro {};
 		class resourcesCadet {};
 		class tapes {};
+		class timer {};
 	};
 
 	class crates {
