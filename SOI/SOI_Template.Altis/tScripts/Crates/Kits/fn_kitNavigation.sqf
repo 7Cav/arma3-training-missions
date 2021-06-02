@@ -36,7 +36,7 @@ _box addAction ["  " + _color + _img + "</t>" + _role, {
 				["ACE_personalAidKit",1],
 				["rhsusf_ANPVS_14",1],
 				["ACE_EntrenchingTool",1]]
-			],"rhsusf_ach_helmet_ocp","",[],
+			],"rhsusf_ach_helmet_ocp","",["rhsusf_bino_m24_ARD","","","",[],[],""],
 			["ItemMap","","","ItemCompass","ItemWatch",""]
 		];
 
